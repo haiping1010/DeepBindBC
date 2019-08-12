@@ -1,0 +1,2 @@
+1q1g_processed.pdb
+1q1g_proc

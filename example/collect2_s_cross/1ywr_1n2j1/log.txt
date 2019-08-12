@@ -1,0 +1,2 @@
+1ywr_processed.pdb
+1ywr_proc

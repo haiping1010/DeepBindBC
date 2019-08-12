@@ -1,0 +1,2 @@
+2bm2_processed.pdb
+2bm2_proc

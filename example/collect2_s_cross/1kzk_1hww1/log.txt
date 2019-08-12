@@ -1,0 +1,2 @@
+1kzk_processed.pdb
+1kzk_proc

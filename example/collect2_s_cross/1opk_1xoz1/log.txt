@@ -1,0 +1,2 @@
+1opk_processed.pdb
+1opk_proc

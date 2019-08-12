@@ -1,0 +1,2 @@
+1p62_processed.pdb
+1p62_proc

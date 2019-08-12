@@ -1,0 +1,2 @@
+1tt1_processed.pdb
+1tt1_proc

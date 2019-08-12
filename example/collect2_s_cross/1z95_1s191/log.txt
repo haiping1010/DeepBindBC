@@ -1,0 +1,2 @@
+1z95_processed.pdb
+1z95_proc

@@ -1,0 +1,81 @@
+MODEL 1
+REMARK VINA RESULT:      -6.1      0.000      0.000
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+ROOT
+ATOM      1  O   PRO d           8.635  12.979  24.950  0.00  0.00    -0.261 OA
+ATOM      2  C   PRO d           9.591  13.752  24.967  0.00  0.00     0.329 C 
+ATOM      3 CA   PRO d           9.805  14.684  26.160  0.00  0.00     0.000 Ca
+ATOM      4  HA  PRO d          10.505  14.234  26.888  0.00  0.00     0.000 HD
+ATOM      5  CB  PRO d           8.473  15.087  26.796  0.00  0.00     0.000 C 
+ATOM      6  CG  PRO d           8.917  16.322  27.584  0.00  0.00    -0.065 C 
+ATOM      7 HG1  PRO d           9.576  16.000  28.412  0.00  0.00     0.033 Hg
+ATOM      8 HG2  PRO d           8.112  16.920  28.037  0.00  0.00     0.033 Hg
+ATOM      9 CD   PRO d           9.715  17.093  26.528  0.00  0.00     0.000 Cd
+ATOM     10  HD1 PRO d          10.505  17.756  26.906  0.00  0.00     0.000 HD
+ATOM     11  HD2 PRO d           9.053  17.684  25.873  0.00  0.00     0.000 HD
+ATOM     12  N   PRO d          10.319  15.995  25.737  0.00  0.00    -0.098 N 
+ATOM     13  C   GLY d          11.186  16.062  24.638  0.00  0.00     0.356 C 
+ATOM     14  O   GLY d          11.610  17.154  24.259  0.00  0.00    -0.258 OA
+ATOM     15 CA   GLY d          11.596  14.792  23.887  0.00  0.00     0.000 Ca
+ATOM     16  HA1 GLY d          12.490  14.364  24.372  0.00  0.00     0.000 HD
+ATOM     17  HA2 GLY d          11.841  15.101  22.863  0.00  0.00     0.000 HD
+ATOM     18  N   GLY d          10.486  13.810  23.890  0.00  0.00    -0.259 N 
+ATOM     19  H   GLY d          10.370  13.165  23.095  0.00  0.00     0.190 HD
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -5.8      1.773      3.777
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+ROOT
+ATOM      1  O   PRO d           7.865  14.385  27.474  0.00  0.00    -0.261 OA
+ATOM      2  C   PRO d           8.724  15.206  27.155  0.00  0.00     0.329 C 
+ATOM      3 CA   PRO d           9.421  15.100  25.799  0.00  0.00     0.000 Ca
+ATOM      4  HA  PRO d           8.920  15.740  25.050  0.00  0.00     0.000 HD
+ATOM      5  CB  PRO d           9.537  13.644  25.346  0.00  0.00     0.000 C 
+ATOM      6  CG  PRO d          10.636  13.780  24.289  0.00  0.00    -0.065 C 
+ATOM      7 HG1  PRO d          10.235  14.346  23.427  0.00  0.00     0.033 Hg
+ATOM      8 HG2  PRO d          11.037  12.838  23.887  0.00  0.00     0.033 Hg
+ATOM      9 CD   PRO d          11.685  14.608  25.038  0.00  0.00     0.000 Cd
+ATOM     10  HD1 PRO d          12.347  15.227  24.416  0.00  0.00     0.000 HD
+ATOM     11  HD2 PRO d          12.314  13.973  25.684  0.00  0.00     0.000 HD
+ATOM     12  N   PRO d          10.840  15.477  25.890  0.00  0.00    -0.098 N 
+ATOM     13  C   GLY d          11.220  16.481  26.791  0.00  0.00     0.356 C 
+ATOM     14  O   GLY d          12.406  16.794  26.893  0.00  0.00    -0.258 OA
+ATOM     15 CA   GLY d          10.177  17.178  27.669  0.00  0.00     0.000 Ca
+ATOM     16  HA1 GLY d           9.767  18.042  27.117  0.00  0.00     0.000 HD
+ATOM     17  HA2 GLY d          10.707  17.528  28.564  0.00  0.00     0.000 HD
+ATOM     18  N   GLY d           9.094  16.235  28.032  0.00  0.00    -0.259 N 
+ATOM     19  H   GLY d           8.609  16.335  28.935  0.00  0.00     0.190 HD
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -5.7      2.348      3.421
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+ROOT
+ATOM      1  O   PRO d           8.735  15.077  27.398  0.00  0.00    -0.261 OA
+ATOM      2  C   PRO d           9.484  14.415  26.681  0.00  0.00     0.329 C 
+ATOM      3 CA   PRO d          10.652  15.090  25.961  0.00  0.00     0.000 Ca
+ATOM      4  HA  PRO d          11.582  14.997  26.552  0.00  0.00     0.000 HD
+ATOM      5  CB  PRO d          10.322  16.540  25.605  0.00  0.00     0.000 C 
+ATOM      6  CG  PRO d          11.382  16.798  24.531  0.00  0.00    -0.065 C 
+ATOM      7 HG1  PRO d          12.380  16.812  25.009  0.00  0.00     0.033 Hg
+ATOM      8 HG2  PRO d          11.287  17.745  23.978  0.00  0.00     0.033 Hg
+ATOM      9 CD   PRO d          11.228  15.563  23.639  0.00  0.00     0.000 Cd
+ATOM     10  HD1 PRO d          12.122  15.254  23.080  0.00  0.00     0.000 HD
+ATOM     11  HD2 PRO d          10.398  15.684  22.922  0.00  0.00     0.000 HD
+ATOM     12  N   PRO d          10.866  14.516  24.624  0.00  0.00    -0.098 N 
+ATOM     13  C   GLY d          10.619  13.152  24.422  0.00  0.00     0.356 C 
+ATOM     14  O   GLY d          10.774  12.661  23.304  0.00  0.00    -0.258 OA
+ATOM     15 CA   GLY d          10.135  12.267  25.574  0.00  0.00     0.000 Ca
+ATOM     16  HA1 GLY d          11.013  11.871  26.113  0.00  0.00     0.000 HD
+ATOM     17  HA2 GLY d           9.576  11.439  25.117  0.00  0.00     0.000 HD
+ATOM     18  N   GLY d           9.270  13.043  26.493  0.00  0.00    -0.259 N 
+ATOM     19  H   GLY d           8.505  12.572  26.998  0.00  0.00     0.190 HD
+ENDROOT
+TORSDOF 0
+ENDMDL

@@ -1,0 +1,42 @@
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N_1  and  CA_5 
+REMARK    2  A    between atoms: CA_5  and  C_7 
+REMARK    3  A    between atoms: CA_5  and  CB_9 
+REMARK    4  A    between atoms: CB_9  and  CG_10 
+REMARK    5  A    between atoms: CZ_15  and  OH_16 
+ROOT
+ATOM      1  CG  TYR d           9.097  29.537  16.475  0.00  0.00    -0.044 A 
+ATOM      2 CD1  TYR d           9.753  28.695  17.371  0.00  0.00     0.000 Cd
+ATOM      3 CD2  TYR d           9.867  30.259  15.564  0.00  0.00     0.000 Cd
+ATOM      4 CE1  TYR d          11.139  28.575  17.361  0.00  0.00     0.000 Ce
+ATOM      5 CE2  TYR d          11.252  30.145  15.547  0.00  0.00     0.000 Ce
+ATOM      6  CZ  TYR d          11.881  29.303  16.447  0.00  0.00     0.138 A 
+ATOM      7  HD1 TYR d           9.171  28.121  18.092  0.00  0.00     0.000 HD
+ATOM      8  HD2 TYR d           9.375  30.924  14.854  0.00  0.00     0.000 HD
+ATOM      9 HE1  TYR d          11.637  27.912  18.068  0.00  0.00     0.000 He
+ATOM     10 HE2  TYR d          11.840  30.716  14.828  0.00  0.00     0.000 He
+ENDROOT
+BRANCH   1  11
+ATOM     11  CB  TYR d           7.592  29.661  16.488  0.00  0.00     0.044 C 
+BRANCH  11  12
+ATOM     12 CA   TYR d           6.854  28.331  16.296  0.00  0.00     0.000 Ca
+ATOM     13  HA  TYR d           7.076  27.649  17.131  0.00  0.00     0.000 HD
+BRANCH  12  14
+ATOM     14  N   TYR d           7.294  27.669  15.032  0.00  0.00     0.072 N 
+ATOM     15  H1  TYR d           8.255  27.729  14.761  0.00  0.00     0.309 HD
+ATOM     16  H2  TYR d           7.004  26.705  15.016  0.00  0.00     0.309 HD
+ATOM     17  H3  TYR d           6.669  28.085  14.333  0.00  0.00     0.309 HD
+ENDBRANCH  12  14
+BRANCH  12  18
+ATOM     18  C   TYR d           5.354  28.594  16.240  0.00  0.00     0.279 C 
+ATOM     19  O   TYR d           4.793  29.013  17.273  0.00  0.00    -0.639 OA
+ATOM     20  OXT TYR d           4.769  28.398  15.154  0.00  0.00    -0.639 OA
+ENDBRANCH  12  18
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+BRANCH   6  21
+ATOM     21  OH  TYR d          13.257  29.195  16.437  0.00  0.00    -0.356 OA
+ATOM     22  HH  TYR d          13.524  28.217  16.256  0.00  0.00     0.218 HD
+ENDBRANCH   6  21
+TORSDOF 5

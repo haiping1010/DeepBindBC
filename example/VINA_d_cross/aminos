@@ -1,0 +1,23 @@
+#PBS -l nodes=1:ppn=12
+#PBS -l walltime=240:00:00
+#PBS -j oe
+#PBS -q longtime
+#PBS -o out_error.txt
+##set -u
+
+###cd /share/home/zhanghaiping/program/OptCDR/results/test_2m2d_n_full/design1/
+
+cd   /share/home/zhanghaiping/work/refined_set/VINA_d_5000_2
+
+module load python/2.6.3
+module load gams
+echo " "
+echo " " 
+echo "Job started on $(hostname -s) at $(date)"
+
+
+perl 2.pl  > output.log
+
+echo " " 
+echo "Job ended at $(date)"
+echo " "

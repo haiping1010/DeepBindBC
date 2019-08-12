@@ -1,0 +1,2 @@
+1tz8_processed.pdb
+1tz8_proc

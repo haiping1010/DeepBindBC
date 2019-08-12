@@ -1,0 +1,2 @@
+1sq5_processed.pdb
+1sq5_proc

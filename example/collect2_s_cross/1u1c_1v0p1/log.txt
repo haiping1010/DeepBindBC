@@ -1,0 +1,8 @@
+1u1c_processed.pdb
+1u1c_proc
+Traceback (most recent call last):
+  File "../../python2_L_col_1000_0.4.py", line 200, in <module>
+    writout=MapResToOnehot(residuePair[groupid][0],residuePair[groupid][1])
+  File "../../python2_L_col_1000_0.4.py", line 37, in MapResToOnehot
+    return (np.concatenate((code[atom1],codelig[atom2])))
+KeyError: 'DU'

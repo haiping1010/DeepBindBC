@@ -1,0 +1,2 @@
+2bsm_processed.pdb
+2bsm_proc

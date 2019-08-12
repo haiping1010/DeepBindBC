@@ -1,0 +1,2 @@
+1nav_processed.pdb
+1nav_proc

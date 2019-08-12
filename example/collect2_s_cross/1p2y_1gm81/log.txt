@@ -1,0 +1,2 @@
+1p2y_processed.pdb
+1p2y_proc

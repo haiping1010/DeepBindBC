@@ -1,0 +1,12 @@
+#source /home/zhp/tleap/leaprc.ff14SB
+source  /share/home/zhanghaiping/program/amber16/dat/leap/cmd/oldff/leaprc.ff99SB
+#source /home/zhp/tleap/leaprc.GLYCAM_06j-1
+set default PBRadii mbondi3
+#3dipepide=sequence{ACE VAL NME}
+
+
+protein = loadpdb  1opk_ww.pdb
+savepdb  protein  protein.pdb
+##saveamberparm dipepide diVAL.prmtop diVAL.inpcrd
+
+quit

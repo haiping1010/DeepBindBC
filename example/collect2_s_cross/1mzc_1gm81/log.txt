@@ -1,0 +1,2 @@
+1mzc_processed.pdb
+1mzc_proc

@@ -1,0 +1,2 @@
+1j3j_processed.pdb
+1j3j_proc

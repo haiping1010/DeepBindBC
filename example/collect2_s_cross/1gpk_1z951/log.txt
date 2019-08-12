@@ -1,0 +1,2 @@
+1gpk_processed.pdb
+1gpk_proc

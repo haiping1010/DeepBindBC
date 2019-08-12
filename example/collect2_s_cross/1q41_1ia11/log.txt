@@ -1,0 +1,2 @@
+1q41_processed.pdb
+1q41_proc

@@ -1,0 +1,1505 @@
+log started: Fri Nov 23 17:47:28 2018
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the ff99SB (Hornak & Simmerling) force field
+>> # -----  this file is updated for PDB format 3
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "H"   "H" "sp3" }
+>> 	{ "HO"  "H" "sp3" }
+>> 	{ "HS"  "H" "sp3" }
+>> 	{ "H1"  "H" "sp3" }
+>> 	{ "H2"  "H" "sp3" }
+>> 	{ "H3"  "H" "sp3" }
+>> 	{ "H4"  "H" "sp3" }
+>> 	{ "H5"  "H" "sp3" }
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "HC"  "H" "sp3" }
+>> 	{ "HA"  "H" "sp3" }
+>> 	{ "HP"  "H" "sp3" }
+>> 	{ "OH"  "O" "sp3" }
+>> 	{ "OS"  "O" "sp3" }
+>> 	{ "O"   "O" "sp2" }
+>> 	{ "O2"  "O" "sp2" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "CT"  "C" "sp3" }
+>> 	{ "CH"  "C" "sp3" }
+>> 	{ "C2"  "C" "sp3" }
+>> 	{ "C3"  "C" "sp3" }
+>> 	{ "C"   "C" "sp2" }
+>> 	{ "C*"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CB"  "C" "sp2" }
+>> 	{ "CC"  "C" "sp2" }
+>> 	{ "CN"  "C" "sp2" }
+>> 	{ "CM"  "C" "sp2" }
+>> 	{ "CK"  "C" "sp2" }
+>> 	{ "CQ"  "C" "sp2" }
+>> 	{ "CD"  "C" "sp2" }
+>> 	{ "CE"  "C" "sp2" }
+>> 	{ "CF"  "C" "sp2" }
+>> 	{ "CP"  "C" "sp2" }
+>> 	{ "CI"  "C" "sp2" }
+>> 	{ "CJ"  "C" "sp2" }
+>> 	{ "CW"  "C" "sp2" }
+>> 	{ "CV"  "C" "sp2" }
+>> 	{ "CR"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CY"  "C" "sp2" }
+>> 	{ "C0"  "Ca" "sp2" }
+>> 	{ "MG"  "Mg" "sp3" }
+>> 	{ "N"   "N" "sp2" }
+>> 	{ "NA"  "N" "sp2" }
+>> 	{ "N2"  "N" "sp2" }
+>> 	{ "N*"  "N" "sp2" }
+>> 	{ "NP"  "N" "sp2" }
+>> 	{ "NQ"  "N" "sp2" }
+>> 	{ "NB"  "N" "sp2" }
+>> 	{ "NC"  "N" "sp2" }
+>> 	{ "NT"  "N" "sp3" }
+>> 	{ "N3"  "N" "sp3" }
+>> 	{ "S"   "S" "sp3" }
+>> 	{ "SH"  "S" "sp3" }
+>> 	{ "P"   "P" "sp3" }
+>> 	{ "LP"  ""  "sp3" }
+>> 	{ "F"   "F" "sp3" }
+>> 	{ "CL"  "Cl" "sp3" }
+>> 	{ "BR"  "Br" "sp3" }
+>> 	{ "I"   "I"  "sp3" }
+>> 	{ "FE"  "Fe" "sp3" }
+>> 	{ "EP"  ""  "sp3" }
+>> # glycam
+>> 	{ "OG"  "O" "sp3" }
+>> 	{ "OL"  "O" "sp3" }
+>> 	{ "AC"  "C" "sp3" }
+>> 	{ "EC"  "C" "sp3" }
+>> }
+>> #
+>> #	Load the main parameter set.
+>> #
+>> parm99 = loadamberparams parm99.dat
+Loading parameters: /share/home/zhanghaiping/program/amber16/dat/leap/parm/parm99.dat
+Reading title:
+PARM99 for DNA,RNA,AA, organic molecules, TIP3P wat. Polariz.& LP incl.02/04/99
+(UNKNOWN ATOM TYPE: HZ)
+(UNKNOWN ATOM TYPE: IM)
+(UNKNOWN ATOM TYPE: Li)
+(UNKNOWN ATOM TYPE: IP)
+(UNKNOWN ATOM TYPE: K)
+(UNKNOWN ATOM TYPE: Rb)
+(UNKNOWN ATOM TYPE: Cs)
+(UNKNOWN ATOM TYPE: Zn)
+(UNKNOWN ATOM TYPE: IB)
+(UNKNOWN ATOM TYPE: LP)
+>> frcmod99SB = loadamberparams frcmod.ff99SB
+Loading parameters: /share/home/zhanghaiping/program/amber16/dat/leap/parm/frcmod.ff99SB
+Reading force field modification type file (frcmod)
+Reading title:
+Modification/update of parm99.dat (Hornak & Simmerling)
+>> #
+>> #	Load DNA/RNA libraries
+>> #
+>> loadOff all_nucleic94.lib
+Loading library: /share/home/zhanghaiping/program/amber16/dat/leap/lib/all_nucleic94.lib
+Loading: DA
+Loading: DA3
+Loading: DA5
+Loading: DAN
+Loading: DC
+Loading: DC3
+Loading: DC5
+Loading: DCN
+Loading: DG
+Loading: DG3
+Loading: DG5
+Loading: DGN
+Loading: DT
+Loading: DT3
+Loading: DT5
+Loading: DTN
+Loading: RA
+Loading: RA3
+Loading: RA5
+Loading: RAN
+Loading: RC
+Loading: RC3
+Loading: RC5
+Loading: RCN
+Loading: RG
+Loading: RG3
+Loading: RG5
+Loading: RGN
+Loading: RU
+Loading: RU3
+Loading: RU5
+Loading: RUN
+>> #
+>> #	Load main chain and terminating 
+>> #	amino acid libraries (i.e. ff94 libs)
+>> #
+>> loadOff all_amino94.lib
+Loading library: /share/home/zhanghaiping/program/amber16/dat/leap/lib/all_amino94.lib
+Loading: ALA
+Loading: ARG
+Loading: ASH
+Loading: ASN
+Loading: ASP
+Loading: CYM
+Loading: CYS
+Loading: CYX
+Loading: GLH
+Loading: GLN
+Loading: GLU
+Loading: GLY
+Loading: HID
+Loading: HIE
+Loading: HIP
+Loading: ILE
+Loading: LEU
+Loading: LYN
+Loading: LYS
+Loading: MET
+Loading: PHE
+Loading: PRO
+Loading: SER
+Loading: THR
+Loading: TRP
+Loading: TYR
+Loading: VAL
+>> loadOff all_aminoct94.lib
+Loading library: /share/home/zhanghaiping/program/amber16/dat/leap/lib/all_aminoct94.lib
+Loading: CALA
+Loading: CARG
+Loading: CASN
+Loading: CASP
+Loading: CCYS
+Loading: CCYX
+Loading: CGLN
+Loading: CGLU
+Loading: CGLY
+Loading: CHID
+Loading: CHIE
+Loading: CHIP
+Loading: CILE
+Loading: CLEU
+Loading: CLYS
+Loading: CMET
+Loading: CPHE
+Loading: CPRO
+Loading: CSER
+Loading: CTHR
+Loading: CTRP
+Loading: CTYR
+Loading: CVAL
+Loading: NHE
+Loading: NME
+>> loadOff all_aminont94.lib
+Loading library: /share/home/zhanghaiping/program/amber16/dat/leap/lib/all_aminont94.lib
+Loading: ACE
+Loading: NALA
+Loading: NARG
+Loading: NASN
+Loading: NASP
+Loading: NCYS
+Loading: NCYX
+Loading: NGLN
+Loading: NGLU
+Loading: NGLY
+Loading: NHID
+Loading: NHIE
+Loading: NHIP
+Loading: NILE
+Loading: NLEU
+Loading: NLYS
+Loading: NMET
+Loading: NPHE
+Loading: NPRO
+Loading: NSER
+Loading: NTHR
+Loading: NTRP
+Loading: NTYR
+Loading: NVAL
+>> #
+>> #       Load water and ions
+>> # 
+>> loadOff ions94.lib
+Loading library: /share/home/zhanghaiping/program/amber16/dat/leap/lib/ions94.lib
+Loading: CIO
+Loading: Cl-
+Loading: Cs+
+Loading: IB
+Loading: K+
+Loading: Li+
+Loading: MG2
+Loading: Na+
+Loading: Rb+
+>> loadOff solvents.lib
+Loading library: /share/home/zhanghaiping/program/amber16/dat/leap/lib/solvents.lib
+Loading: CHCL3BOX
+Loading: DC4
+Loading: FB3
+Loading: FB3BOX
+Loading: FB4
+Loading: FB4BOX
+Loading: MEOHBOX
+Loading: NMABOX
+Loading: OPC
+Loading: OPCBOX
+Loading: PL3
+Loading: POL3BOX
+Loading: QSPCFWBOX
+Loading: SPC
+Loading: SPCBOX
+Loading: SPCFWBOX
+Loading: SPF
+Loading: SPG
+Loading: T4E
+Loading: TIP3PBOX
+Loading: TIP3PFBOX
+Loading: TIP4PBOX
+Loading: TIP4PEWBOX
+Loading: TIP5PBOX
+Loading: TP3
+Loading: TP4
+Loading: TP5
+Loading: TPF
+>> HOH = TP3
+>> WAT = TP3
+>> 
+>> #
+>> #	Define the PDB name map for the amino acids and DNA.
+>> #
+>> addPdbResMap {
+>>   { 0 "ALA" "NALA" } { 1 "ALA" "CALA" }
+>>   { 0 "ARG" "NARG" } { 1 "ARG" "CARG" }
+>>   { 0 "ASN" "NASN" } { 1 "ASN" "CASN" }
+>>   { 0 "ASP" "NASP" } { 1 "ASP" "CASP" }
+>>   { 0 "CYS" "NCYS" } { 1 "CYS" "CCYS" }
+>>   { 0 "CYX" "NCYX" } { 1 "CYX" "CCYX" }
+>>   { 0 "GLN" "NGLN" } { 1 "GLN" "CGLN" }
+>>   { 0 "GLU" "NGLU" } { 1 "GLU" "CGLU" }
+>>   { 0 "GLY" "NGLY" } { 1 "GLY" "CGLY" }
+>>   { 0 "HID" "NHID" } { 1 "HID" "CHID" }
+>>   { 0 "HIE" "NHIE" } { 1 "HIE" "CHIE" }
+>>   { 0 "HIP" "NHIP" } { 1 "HIP" "CHIP" }
+>>   { 0 "ILE" "NILE" } { 1 "ILE" "CILE" }
+>>   { 0 "LEU" "NLEU" } { 1 "LEU" "CLEU" }
+>>   { 0 "LYS" "NLYS" } { 1 "LYS" "CLYS" }
+>>   { 0 "MET" "NMET" } { 1 "MET" "CMET" }
+>>   { 0 "PHE" "NPHE" } { 1 "PHE" "CPHE" }
+>>   { 0 "PRO" "NPRO" } { 1 "PRO" "CPRO" }
+>>   { 0 "SER" "NSER" } { 1 "SER" "CSER" }
+>>   { 0 "THR" "NTHR" } { 1 "THR" "CTHR" }
+>>   { 0 "TRP" "NTRP" } { 1 "TRP" "CTRP" }
+>>   { 0 "TYR" "NTYR" } { 1 "TYR" "CTYR" }
+>>   { 0 "VAL" "NVAL" } { 1 "VAL" "CVAL" }
+>>   { 0 "HIS" "NHIS" } { 1 "HIS" "CHIS" }
+>>   { 0 "GUA" "DG5"  } { 1 "GUA" "DG3"  } { "GUA" "DG" }
+>>   { 0 "ADE" "DA5"  } { 1 "ADE" "DA3"  } { "ADE" "DA" }
+>>   { 0 "CYT" "DC5"  } { 1 "CYT" "DC3"  } { "CYT" "DC" }
+>>   { 0 "THY" "DT5"  } { 1 "THY" "DT3"  } { "THY" "DT" }
+>>   { 0 "G" "RG5"  } { 1 "G" "RG3"  } { "G" "RG" } { "GN" "RGN" }
+>>   { 0 "A" "RA5"  } { 1 "A" "RA3"  } { "A" "RA" } { "AN" "RAN" }
+>>   { 0 "C" "RC5"  } { 1 "C" "RC3"  } { "C" "RC" } { "CN" "RCN" }
+>>   { 0 "U" "RU5"  } { 1 "U" "RU3"  } { "U" "RU" } { "UN" "RUN" }
+>>   { 0 "DG" "DG5"  } { 1 "DG" "DG3"  }  
+>>   { 0 "DA" "DA5"  } { 1 "DA" "DA3"  }  
+>>   { 0 "DC" "DC5"  } { 1 "DC" "DC3"  }  
+>>   { 0 "DT" "DT5"  } { 1 "DT" "DT3"  }
+>> 
+>> }
+>> 
+>> addPdbAtomMap {
+>>   { "O5*" "O5'" }
+>>   { "C5*" "C5'" }
+>>   { "C4*" "C4'" }
+>>   { "O4*" "O4'" }
+>>   { "C3*" "C3'" }
+>>   { "O3*" "O3'" }
+>>   { "C2*" "C2'" }
+>>   { "C1*" "C1'" }
+>>   { "C5M" "C7"  }
+>>   { "O2*" "O2'" }
+>>   { "H1*" "H1'" }
+>>   { "H2*1" "H2'1" }
+>>   { "H2*2" "H2'2" }
+>>   { "H2'"  "H2'1" }
+>>   { "H2''" "H2'2" }
+>>   { "H3*" "H3'" }
+>>   { "H4*" "H4'" }
+>>   { "H5*1" "H5'1" }
+>>   { "H5*2" "H5'2" }
+>>   { "H5'"  "H5'1" }
+>>   { "H5''" "H5'2" }
+>>   { "HO2'" "HO'2" }
+>>   { "HO5'" "H5T" }
+>>   { "HO3'" "H3T" }
+>>   { "O1'" "O4'" }
+>>   { "OA"  "O1P" }
+>>   { "OB"  "O2P" }
+>>   { "OP1" "O1P" }
+>>   { "OP2" "O2P" }
+>> }
+>> 
+>> 
+>> #
+>> # assumed that most often proteins use HIE
+>> #
+>> NHIS = NHIE
+>> HIS = HIE
+>> CHIS = CHIE
+> 
+> #source /home/zhp/tleap/leaprc.GLYCAM_06j-1
+> set default PBRadii mbondi3
+Using ArgH and AspGluO modified Bondi2 radii
+> #3dipepide=sequence{ACE VAL NME}
+> 
+> 
+> protein = loadpdb  1yvf_ww.pdb
+Loading PDB file: ./1yvf_ww.pdb
+Enter zPdbReadScan from call depth  0.
+Exit  zPdbReadScan from call depth  0.
+Matching PDB residue names to LEaP variables.
+Mapped residue MET, term: Terminal/beginning, seq. number: 0 to: NMET.
+(Residue 1: SER, Nonterminal, was not found in name map.)
+(Residue 2: MET, Nonterminal, was not found in name map.)
+(Residue 3: SER, Nonterminal, was not found in name map.)
+(Residue 4: TYR, Nonterminal, was not found in name map.)
+(Residue 5: THR, Nonterminal, was not found in name map.)
+(Residue 6: TRP, Nonterminal, was not found in name map.)
+(Residue 7: THR, Nonterminal, was not found in name map.)
+(Residue 8: GLY, Nonterminal, was not found in name map.)
+(Residue 9: ALA, Nonterminal, was not found in name map.)
+(Residue 10: LEU, Nonterminal, was not found in name map.)
+(Residue 11: ILE, Nonterminal, was not found in name map.)
+(Residue 12: THR, Nonterminal, was not found in name map.)
+(Residue 13: PRO, Nonterminal, was not found in name map.)
+(Residue 14: CYS, Nonterminal, was not found in name map.)
+(Residue 15: ALA, Nonterminal, was not found in name map.)
+(Residue 16: ALA, Nonterminal, was not found in name map.)
+(Residue 17: GLU, Nonterminal, was not found in name map.)
+(Residue 18: GLU, Nonterminal, was not found in name map.)
+(Residue 19: SER, Nonterminal, was not found in name map.)
+(Residue 20: LYS, Nonterminal, was not found in name map.)
+(Residue 21: LEU, Nonterminal, was not found in name map.)
+(Residue 22: PRO, Nonterminal, was not found in name map.)
+(Residue 23: ILE, Nonterminal, was not found in name map.)
+(Residue 24: ASN, Nonterminal, was not found in name map.)
+(Residue 25: ALA, Nonterminal, was not found in name map.)
+(Residue 26: LEU, Nonterminal, was not found in name map.)
+(Residue 27: SER, Nonterminal, was not found in name map.)
+(Residue 28: ASN, Nonterminal, was not found in name map.)
+(Residue 29: SER, Nonterminal, was not found in name map.)
+(Residue 30: LEU, Nonterminal, was not found in name map.)
+(Residue 31: LEU, Nonterminal, was not found in name map.)
+(Residue 32: ARG, Nonterminal, was not found in name map.)
+(Residue 33: HIS, Nonterminal, was not found in name map.)
+(Residue 34: HIS, Nonterminal, was not found in name map.)
+(Residue 35: ASN, Nonterminal, was not found in name map.)
+(Residue 36: LEU, Nonterminal, was not found in name map.)
+(Residue 37: VAL, Nonterminal, was not found in name map.)
+(Residue 38: TYR, Nonterminal, was not found in name map.)
+(Residue 39: SER, Nonterminal, was not found in name map.)
+(Residue 40: THR, Nonterminal, was not found in name map.)
+(Residue 41: THR, Nonterminal, was not found in name map.)
+(Residue 42: SER, Nonterminal, was not found in name map.)
+(Residue 43: ARG, Nonterminal, was not found in name map.)
+(Residue 44: SER, Nonterminal, was not found in name map.)
+(Residue 45: ALA, Nonterminal, was not found in name map.)
+(Residue 46: SER, Nonterminal, was not found in name map.)
+(Residue 47: LEU, Nonterminal, was not found in name map.)
+(Residue 48: ARG, Nonterminal, was not found in name map.)
+(Residue 49: GLN, Nonterminal, was not found in name map.)
+(Residue 50: LYS, Nonterminal, was not found in name map.)
+(Residue 51: LYS, Nonterminal, was not found in name map.)
+(Residue 52: VAL, Nonterminal, was not found in name map.)
+(Residue 53: THR, Nonterminal, was not found in name map.)
+(Residue 54: PHE, Nonterminal, was not found in name map.)
+(Residue 55: ASP, Nonterminal, was not found in name map.)
+(Residue 56: ARG, Nonterminal, was not found in name map.)
+(Residue 57: LEU, Nonterminal, was not found in name map.)
+(Residue 58: GLN, Nonterminal, was not found in name map.)
+(Residue 59: VAL, Nonterminal, was not found in name map.)
+(Residue 60: LEU, Nonterminal, was not found in name map.)
+(Residue 61: ASP, Nonterminal, was not found in name map.)
+(Residue 62: ASP, Nonterminal, was not found in name map.)
+(Residue 63: HIS, Nonterminal, was not found in name map.)
+(Residue 64: TYR, Nonterminal, was not found in name map.)
+(Residue 65: ARG, Nonterminal, was not found in name map.)
+(Residue 66: ASP, Nonterminal, was not found in name map.)
+(Residue 67: VAL, Nonterminal, was not found in name map.)
+(Residue 68: LEU, Nonterminal, was not found in name map.)
+(Residue 69: LYS, Nonterminal, was not found in name map.)
+(Residue 70: GLU, Nonterminal, was not found in name map.)
+(Residue 71: MET, Nonterminal, was not found in name map.)
+(Residue 72: LYS, Nonterminal, was not found in name map.)
+(Residue 73: ALA, Nonterminal, was not found in name map.)
+(Residue 74: LYS, Nonterminal, was not found in name map.)
+(Residue 75: ALA, Nonterminal, was not found in name map.)
+(Residue 76: SER, Nonterminal, was not found in name map.)
+(Residue 77: THR, Nonterminal, was not found in name map.)
+(Residue 78: VAL, Nonterminal, was not found in name map.)
+(Residue 79: LYS, Nonterminal, was not found in name map.)
+(Residue 80: ALA, Nonterminal, was not found in name map.)
+(Residue 81: LYS, Nonterminal, was not found in name map.)
+(Residue 82: LEU, Nonterminal, was not found in name map.)
+(Residue 83: LEU, Nonterminal, was not found in name map.)
+(Residue 84: SER, Nonterminal, was not found in name map.)
+(Residue 85: VAL, Nonterminal, was not found in name map.)
+(Residue 86: GLU, Nonterminal, was not found in name map.)
+(Residue 87: GLU, Nonterminal, was not found in name map.)
+(Residue 88: ALA, Nonterminal, was not found in name map.)
+(Residue 89: CYS, Nonterminal, was not found in name map.)
+(Residue 90: LYS, Nonterminal, was not found in name map.)
+(Residue 91: LEU, Nonterminal, was not found in name map.)
+(Residue 92: THR, Nonterminal, was not found in name map.)
+(Residue 93: PRO, Nonterminal, was not found in name map.)
+(Residue 94: PRO, Nonterminal, was not found in name map.)
+(Residue 95: HIS, Nonterminal, was not found in name map.)
+(Residue 96: SER, Nonterminal, was not found in name map.)
+(Residue 97: ALA, Nonterminal, was not found in name map.)
+(Residue 98: LYS, Nonterminal, was not found in name map.)
+(Residue 99: SER, Nonterminal, was not found in name map.)
+(Residue 100: LYS, Nonterminal, was not found in name map.)
+(Residue 101: PHE, Nonterminal, was not found in name map.)
+(Residue 102: GLY, Nonterminal, was not found in name map.)
+(Residue 103: TYR, Nonterminal, was not found in name map.)
+(Residue 104: GLY, Nonterminal, was not found in name map.)
+(Residue 105: ALA, Nonterminal, was not found in name map.)
+(Residue 106: LYS, Nonterminal, was not found in name map.)
+(Residue 107: ASP, Nonterminal, was not found in name map.)
+(Residue 108: VAL, Nonterminal, was not found in name map.)
+(Residue 109: ARG, Nonterminal, was not found in name map.)
+(Residue 110: SER, Nonterminal, was not found in name map.)
+(Residue 111: LEU, Nonterminal, was not found in name map.)
+(Residue 112: SER, Nonterminal, was not found in name map.)
+(Residue 113: SER, Nonterminal, was not found in name map.)
+(Residue 114: ARG, Nonterminal, was not found in name map.)
+(Residue 115: ALA, Nonterminal, was not found in name map.)
+(Residue 116: VAL, Nonterminal, was not found in name map.)
+(Residue 117: ASN, Nonterminal, was not found in name map.)
+(Residue 118: HIS, Nonterminal, was not found in name map.)
+(Residue 119: ILE, Nonterminal, was not found in name map.)
+(Residue 120: ARG, Nonterminal, was not found in name map.)
+(Residue 121: SER, Nonterminal, was not found in name map.)
+(Residue 122: VAL, Nonterminal, was not found in name map.)
+(Residue 123: TRP, Nonterminal, was not found in name map.)
+(Residue 124: LYS, Nonterminal, was not found in name map.)
+(Residue 125: ASP, Nonterminal, was not found in name map.)
+(Residue 126: LEU, Nonterminal, was not found in name map.)
+(Residue 127: LEU, Nonterminal, was not found in name map.)
+(Residue 128: GLU, Nonterminal, was not found in name map.)
+(Residue 129: ASP, Nonterminal, was not found in name map.)
+(Residue 130: THR, Nonterminal, was not found in name map.)
+(Residue 131: ASP, Nonterminal, was not found in name map.)
+(Residue 132: THR, Nonterminal, was not found in name map.)
+(Residue 133: PRO, Nonterminal, was not found in name map.)
+(Residue 134: ILE, Nonterminal, was not found in name map.)
+(Residue 135: GLN, Nonterminal, was not found in name map.)
+(Residue 136: THR, Nonterminal, was not found in name map.)
+(Residue 137: THR, Nonterminal, was not found in name map.)
+(Residue 138: ILE, Nonterminal, was not found in name map.)
+(Residue 139: MET, Nonterminal, was not found in name map.)
+(Residue 140: ALA, Nonterminal, was not found in name map.)
+(Residue 141: LYS, Nonterminal, was not found in name map.)
+(Residue 142: ASN, Nonterminal, was not found in name map.)
+(Residue 143: GLU, Nonterminal, was not found in name map.)
+(Residue 144: VAL, Nonterminal, was not found in name map.)
+(Residue 145: PHE, Nonterminal, was not found in name map.)
+(Residue 146: CYS, Nonterminal, was not found in name map.)
+(Residue 147: VAL, Nonterminal, was not found in name map.)
+(Residue 148: GLN, Nonterminal, was not found in name map.)
+(Residue 149: PRO, Nonterminal, was not found in name map.)
+(Residue 150: GLU, Nonterminal, was not found in name map.)
+(Residue 151: LYS, Nonterminal, was not found in name map.)
+(Residue 152: GLY, Nonterminal, was not found in name map.)
+(Residue 153: GLY, Nonterminal, was not found in name map.)
+(Residue 154: ARG, Nonterminal, was not found in name map.)
+(Residue 155: LYS, Nonterminal, was not found in name map.)
+(Residue 156: PRO, Nonterminal, was not found in name map.)
+(Residue 157: ALA, Nonterminal, was not found in name map.)
+(Residue 158: ARG, Nonterminal, was not found in name map.)
+(Residue 159: LEU, Nonterminal, was not found in name map.)
+(Residue 160: ILE, Nonterminal, was not found in name map.)
+(Residue 161: VAL, Nonterminal, was not found in name map.)
+(Residue 162: PHE, Nonterminal, was not found in name map.)
+(Residue 163: PRO, Nonterminal, was not found in name map.)
+(Residue 164: ASP, Nonterminal, was not found in name map.)
+(Residue 165: LEU, Nonterminal, was not found in name map.)
+(Residue 166: GLY, Nonterminal, was not found in name map.)
+(Residue 167: VAL, Nonterminal, was not found in name map.)
+(Residue 168: ARG, Nonterminal, was not found in name map.)
+(Residue 169: VAL, Nonterminal, was not found in name map.)
+(Residue 170: CYS, Nonterminal, was not found in name map.)
+(Residue 171: GLU, Nonterminal, was not found in name map.)
+(Residue 172: LYS, Nonterminal, was not found in name map.)
+(Residue 173: MET, Nonterminal, was not found in name map.)
+(Residue 174: ALA, Nonterminal, was not found in name map.)
+(Residue 175: LEU, Nonterminal, was not found in name map.)
+(Residue 176: TYR, Nonterminal, was not found in name map.)
+(Residue 177: ASP, Nonterminal, was not found in name map.)
+(Residue 178: VAL, Nonterminal, was not found in name map.)
+(Residue 179: VAL, Nonterminal, was not found in name map.)
+(Residue 180: SER, Nonterminal, was not found in name map.)
+(Residue 181: THR, Nonterminal, was not found in name map.)
+(Residue 182: LEU, Nonterminal, was not found in name map.)
+(Residue 183: PRO, Nonterminal, was not found in name map.)
+(Residue 184: GLN, Nonterminal, was not found in name map.)
+(Residue 185: ALA, Nonterminal, was not found in name map.)
+(Residue 186: VAL, Nonterminal, was not found in name map.)
+(Residue 187: MET, Nonterminal, was not found in name map.)
+(Residue 188: GLY, Nonterminal, was not found in name map.)
+(Residue 189: SER, Nonterminal, was not found in name map.)
+(Residue 190: SER, Nonterminal, was not found in name map.)
+(Residue 191: TYR, Nonterminal, was not found in name map.)
+(Residue 192: GLY, Nonterminal, was not found in name map.)
+(Residue 193: PHE, Nonterminal, was not found in name map.)
+(Residue 194: GLN, Nonterminal, was not found in name map.)
+(Residue 195: TYR, Nonterminal, was not found in name map.)
+(Residue 196: SER, Nonterminal, was not found in name map.)
+(Residue 197: PRO, Nonterminal, was not found in name map.)
+(Residue 198: LYS, Nonterminal, was not found in name map.)
+(Residue 199: GLN, Nonterminal, was not found in name map.)
+(Residue 200: ARG, Nonterminal, was not found in name map.)
+(Residue 201: VAL, Nonterminal, was not found in name map.)
+(Residue 202: GLU, Nonterminal, was not found in name map.)
+(Residue 203: PHE, Nonterminal, was not found in name map.)
+(Residue 204: LEU, Nonterminal, was not found in name map.)
+(Residue 205: VAL, Nonterminal, was not found in name map.)
+(Residue 206: ASN, Nonterminal, was not found in name map.)
+(Residue 207: THR, Nonterminal, was not found in name map.)
+(Residue 208: TRP, Nonterminal, was not found in name map.)
+(Residue 209: LYS, Nonterminal, was not found in name map.)
+(Residue 210: ALA, Nonterminal, was not found in name map.)
+(Residue 211: LYS, Nonterminal, was not found in name map.)
+(Residue 212: LYS, Nonterminal, was not found in name map.)
+(Residue 213: CYS, Nonterminal, was not found in name map.)
+(Residue 214: PRO, Nonterminal, was not found in name map.)
+(Residue 215: MET, Nonterminal, was not found in name map.)
+(Residue 216: GLY, Nonterminal, was not found in name map.)
+(Residue 217: PHE, Nonterminal, was not found in name map.)
+(Residue 218: SER, Nonterminal, was not found in name map.)
+(Residue 219: TYR, Nonterminal, was not found in name map.)
+(Residue 220: ASP, Nonterminal, was not found in name map.)
+(Residue 221: THR, Nonterminal, was not found in name map.)
+(Residue 222: ARG, Nonterminal, was not found in name map.)
+(Residue 223: CYS, Nonterminal, was not found in name map.)
+(Residue 224: PHE, Nonterminal, was not found in name map.)
+(Residue 225: ASP, Nonterminal, was not found in name map.)
+(Residue 226: SER, Nonterminal, was not found in name map.)
+(Residue 227: THR, Nonterminal, was not found in name map.)
+(Residue 228: VAL, Nonterminal, was not found in name map.)
+(Residue 229: THR, Nonterminal, was not found in name map.)
+(Residue 230: GLU, Nonterminal, was not found in name map.)
+(Residue 231: ASN, Nonterminal, was not found in name map.)
+(Residue 232: ASP, Nonterminal, was not found in name map.)
+(Residue 233: ILE, Nonterminal, was not found in name map.)
+(Residue 234: ARG, Nonterminal, was not found in name map.)
+(Residue 235: VAL, Nonterminal, was not found in name map.)
+(Residue 236: GLU, Nonterminal, was not found in name map.)
+(Residue 237: GLU, Nonterminal, was not found in name map.)
+(Residue 238: SER, Nonterminal, was not found in name map.)
+(Residue 239: ILE, Nonterminal, was not found in name map.)
+(Residue 240: TYR, Nonterminal, was not found in name map.)
+(Residue 241: GLN, Nonterminal, was not found in name map.)
+(Residue 242: CYS, Nonterminal, was not found in name map.)
+(Residue 243: CYS, Nonterminal, was not found in name map.)
+(Residue 244: ASP, Nonterminal, was not found in name map.)
+(Residue 245: LEU, Nonterminal, was not found in name map.)
+(Residue 246: ALA, Nonterminal, was not found in name map.)
+(Residue 247: PRO, Nonterminal, was not found in name map.)
+(Residue 248: GLU, Nonterminal, was not found in name map.)
+(Residue 249: ALA, Nonterminal, was not found in name map.)
+(Residue 250: ARG, Nonterminal, was not found in name map.)
+(Residue 251: GLN, Nonterminal, was not found in name map.)
+(Residue 252: ALA, Nonterminal, was not found in name map.)
+(Residue 253: ILE, Nonterminal, was not found in name map.)
+(Residue 254: ARG, Nonterminal, was not found in name map.)
+(Residue 255: SER, Nonterminal, was not found in name map.)
+(Residue 256: LEU, Nonterminal, was not found in name map.)
+(Residue 257: THR, Nonterminal, was not found in name map.)
+(Residue 258: GLU, Nonterminal, was not found in name map.)
+(Residue 259: ARG, Nonterminal, was not found in name map.)
+(Residue 260: LEU, Nonterminal, was not found in name map.)
+(Residue 261: TYR, Nonterminal, was not found in name map.)
+(Residue 262: VAL, Nonterminal, was not found in name map.)
+(Residue 263: GLY, Nonterminal, was not found in name map.)
+(Residue 264: GLY, Nonterminal, was not found in name map.)
+(Residue 265: PRO, Nonterminal, was not found in name map.)
+(Residue 266: MET, Nonterminal, was not found in name map.)
+(Residue 267: THR, Nonterminal, was not found in name map.)
+(Residue 268: ASN, Nonterminal, was not found in name map.)
+(Residue 269: SER, Nonterminal, was not found in name map.)
+(Residue 270: LYS, Nonterminal, was not found in name map.)
+(Residue 271: GLY, Nonterminal, was not found in name map.)
+(Residue 272: GLN, Nonterminal, was not found in name map.)
+(Residue 273: ASN, Nonterminal, was not found in name map.)
+(Residue 274: CYS, Nonterminal, was not found in name map.)
+(Residue 275: GLY, Nonterminal, was not found in name map.)
+(Residue 276: TYR, Nonterminal, was not found in name map.)
+(Residue 277: ARG, Nonterminal, was not found in name map.)
+(Residue 278: ARG, Nonterminal, was not found in name map.)
+(Residue 279: CYS, Nonterminal, was not found in name map.)
+(Residue 280: ARG, Nonterminal, was not found in name map.)
+(Residue 281: ALA, Nonterminal, was not found in name map.)
+(Residue 282: SER, Nonterminal, was not found in name map.)
+(Residue 283: GLY, Nonterminal, was not found in name map.)
+(Residue 284: VAL, Nonterminal, was not found in name map.)
+(Residue 285: LEU, Nonterminal, was not found in name map.)
+(Residue 286: THR, Nonterminal, was not found in name map.)
+(Residue 287: THR, Nonterminal, was not found in name map.)
+(Residue 288: SER, Nonterminal, was not found in name map.)
+(Residue 289: CYS, Nonterminal, was not found in name map.)
+(Residue 290: GLY, Nonterminal, was not found in name map.)
+(Residue 291: ASN, Nonterminal, was not found in name map.)
+(Residue 292: THR, Nonterminal, was not found in name map.)
+(Residue 293: LEU, Nonterminal, was not found in name map.)
+(Residue 294: THR, Nonterminal, was not found in name map.)
+(Residue 295: CYS, Nonterminal, was not found in name map.)
+(Residue 296: TYR, Nonterminal, was not found in name map.)
+(Residue 297: LEU, Nonterminal, was not found in name map.)
+(Residue 298: LYS, Nonterminal, was not found in name map.)
+(Residue 299: ALA, Nonterminal, was not found in name map.)
+(Residue 300: ALA, Nonterminal, was not found in name map.)
+(Residue 301: ALA, Nonterminal, was not found in name map.)
+(Residue 302: ALA, Nonterminal, was not found in name map.)
+(Residue 303: CYS, Nonterminal, was not found in name map.)
+(Residue 304: ARG, Nonterminal, was not found in name map.)
+(Residue 305: ALA, Nonterminal, was not found in name map.)
+(Residue 306: ALA, Nonterminal, was not found in name map.)
+(Residue 307: LYS, Nonterminal, was not found in name map.)
+(Residue 308: LEU, Nonterminal, was not found in name map.)
+(Residue 309: GLN, Nonterminal, was not found in name map.)
+(Residue 310: ASP, Nonterminal, was not found in name map.)
+(Residue 311: CYS, Nonterminal, was not found in name map.)
+(Residue 312: THR, Nonterminal, was not found in name map.)
+(Residue 313: MET, Nonterminal, was not found in name map.)
+(Residue 314: LEU, Nonterminal, was not found in name map.)
+(Residue 315: VAL, Nonterminal, was not found in name map.)
+(Residue 316: ASN, Nonterminal, was not found in name map.)
+(Residue 317: GLY, Nonterminal, was not found in name map.)
+(Residue 318: ASP, Nonterminal, was not found in name map.)
+(Residue 319: ASP, Nonterminal, was not found in name map.)
+(Residue 320: LEU, Nonterminal, was not found in name map.)
+(Residue 321: VAL, Nonterminal, was not found in name map.)
+(Residue 322: VAL, Nonterminal, was not found in name map.)
+(Residue 323: ILE, Nonterminal, was not found in name map.)
+(Residue 324: CYS, Nonterminal, was not found in name map.)
+(Residue 325: GLU, Nonterminal, was not found in name map.)
+(Residue 326: SER, Nonterminal, was not found in name map.)
+(Residue 327: ALA, Nonterminal, was not found in name map.)
+(Residue 328: GLY, Nonterminal, was not found in name map.)
+(Residue 329: THR, Nonterminal, was not found in name map.)
+(Residue 330: GLN, Nonterminal, was not found in name map.)
+(Residue 331: GLU, Nonterminal, was not found in name map.)
+(Residue 332: ASP, Nonterminal, was not found in name map.)
+(Residue 333: ALA, Nonterminal, was not found in name map.)
+(Residue 334: ALA, Nonterminal, was not found in name map.)
+(Residue 335: SER, Nonterminal, was not found in name map.)
+(Residue 336: LEU, Nonterminal, was not found in name map.)
+(Residue 337: ARG, Nonterminal, was not found in name map.)
+(Residue 338: VAL, Nonterminal, was not found in name map.)
+(Residue 339: PHE, Nonterminal, was not found in name map.)
+(Residue 340: THR, Nonterminal, was not found in name map.)
+(Residue 341: GLU, Nonterminal, was not found in name map.)
+(Residue 342: ALA, Nonterminal, was not found in name map.)
+(Residue 343: MET, Nonterminal, was not found in name map.)
+(Residue 344: THR, Nonterminal, was not found in name map.)
+(Residue 345: ARG, Nonterminal, was not found in name map.)
+(Residue 346: TYR, Nonterminal, was not found in name map.)
+(Residue 347: SER, Nonterminal, was not found in name map.)
+(Residue 348: ALA, Nonterminal, was not found in name map.)
+(Residue 349: PRO, Nonterminal, was not found in name map.)
+(Residue 350: PRO, Nonterminal, was not found in name map.)
+(Residue 351: GLY, Nonterminal, was not found in name map.)
+(Residue 352: ASP, Nonterminal, was not found in name map.)
+(Residue 353: PRO, Nonterminal, was not found in name map.)
+(Residue 354: PRO, Nonterminal, was not found in name map.)
+(Residue 355: GLN, Nonterminal, was not found in name map.)
+(Residue 356: PRO, Nonterminal, was not found in name map.)
+(Residue 357: GLU, Nonterminal, was not found in name map.)
+(Residue 358: TYR, Nonterminal, was not found in name map.)
+(Residue 359: ASP, Nonterminal, was not found in name map.)
+(Residue 360: LEU, Nonterminal, was not found in name map.)
+(Residue 361: GLU, Nonterminal, was not found in name map.)
+(Residue 362: LEU, Nonterminal, was not found in name map.)
+(Residue 363: ILE, Nonterminal, was not found in name map.)
+(Residue 364: THR, Nonterminal, was not found in name map.)
+(Residue 365: SER, Nonterminal, was not found in name map.)
+(Residue 366: CYS, Nonterminal, was not found in name map.)
+(Residue 367: SER, Nonterminal, was not found in name map.)
+(Residue 368: SER, Nonterminal, was not found in name map.)
+(Residue 369: ASN, Nonterminal, was not found in name map.)
+(Residue 370: VAL, Nonterminal, was not found in name map.)
+(Residue 371: SER, Nonterminal, was not found in name map.)
+(Residue 372: VAL, Nonterminal, was not found in name map.)
+(Residue 373: ALA, Nonterminal, was not found in name map.)
+(Residue 374: HIS, Nonterminal, was not found in name map.)
+(Residue 375: ASP, Nonterminal, was not found in name map.)
+(Residue 376: ALA, Nonterminal, was not found in name map.)
+(Residue 377: SER, Nonterminal, was not found in name map.)
+(Residue 378: GLY, Nonterminal, was not found in name map.)
+(Residue 379: LYS, Nonterminal, was not found in name map.)
+(Residue 380: ARG, Nonterminal, was not found in name map.)
+(Residue 381: VAL, Nonterminal, was not found in name map.)
+(Residue 382: TYR, Nonterminal, was not found in name map.)
+(Residue 383: TYR, Nonterminal, was not found in name map.)
+(Residue 384: LEU, Nonterminal, was not found in name map.)
+(Residue 385: THR, Nonterminal, was not found in name map.)
+(Residue 386: ARG, Nonterminal, was not found in name map.)
+(Residue 387: ASP, Nonterminal, was not found in name map.)
+(Residue 388: PRO, Nonterminal, was not found in name map.)
+(Residue 389: THR, Nonterminal, was not found in name map.)
+(Residue 390: VAL, Nonterminal, was not found in name map.)
+(Residue 391: PRO, Nonterminal, was not found in name map.)
+(Residue 392: LEU, Nonterminal, was not found in name map.)
+(Residue 393: ALA, Nonterminal, was not found in name map.)
+(Residue 394: ARG, Nonterminal, was not found in name map.)
+(Residue 395: ALA, Nonterminal, was not found in name map.)
+(Residue 396: ALA, Nonterminal, was not found in name map.)
+(Residue 397: TRP, Nonterminal, was not found in name map.)
+(Residue 398: GLU, Nonterminal, was not found in name map.)
+(Residue 399: THR, Nonterminal, was not found in name map.)
+(Residue 400: ALA, Nonterminal, was not found in name map.)
+(Residue 401: ARG, Nonterminal, was not found in name map.)
+(Residue 402: HIS, Nonterminal, was not found in name map.)
+(Residue 403: THR, Nonterminal, was not found in name map.)
+(Residue 404: PRO, Nonterminal, was not found in name map.)
+(Residue 405: VAL, Nonterminal, was not found in name map.)
+(Residue 406: ASN, Nonterminal, was not found in name map.)
+(Residue 407: SER, Nonterminal, was not found in name map.)
+(Residue 408: TRP, Nonterminal, was not found in name map.)
+(Residue 409: LEU, Nonterminal, was not found in name map.)
+(Residue 410: GLY, Nonterminal, was not found in name map.)
+(Residue 411: ASN, Nonterminal, was not found in name map.)
+(Residue 412: ILE, Nonterminal, was not found in name map.)
+(Residue 413: ILE, Nonterminal, was not found in name map.)
+(Residue 414: MET, Nonterminal, was not found in name map.)
+(Residue 415: TYR, Nonterminal, was not found in name map.)
+(Residue 416: ALA, Nonterminal, was not found in name map.)
+(Residue 417: PRO, Nonterminal, was not found in name map.)
+(Residue 418: THR, Nonterminal, was not found in name map.)
+(Residue 419: LEU, Nonterminal, was not found in name map.)
+(Residue 420: TRP, Nonterminal, was not found in name map.)
+(Residue 421: ALA, Nonterminal, was not found in name map.)
+(Residue 422: ARG, Nonterminal, was not found in name map.)
+(Residue 423: MET, Nonterminal, was not found in name map.)
+(Residue 424: ILE, Nonterminal, was not found in name map.)
+(Residue 425: LEU, Nonterminal, was not found in name map.)
+(Residue 426: MET, Nonterminal, was not found in name map.)
+(Residue 427: THR, Nonterminal, was not found in name map.)
+(Residue 428: HIS, Nonterminal, was not found in name map.)
+(Residue 429: PHE, Nonterminal, was not found in name map.)
+(Residue 430: PHE, Nonterminal, was not found in name map.)
+(Residue 431: SER, Nonterminal, was not found in name map.)
+(Residue 432: ILE, Nonterminal, was not found in name map.)
+(Residue 433: LEU, Nonterminal, was not found in name map.)
+(Residue 434: LEU, Nonterminal, was not found in name map.)
+(Residue 435: ALA, Nonterminal, was not found in name map.)
+(Residue 436: GLN, Nonterminal, was not found in name map.)
+(Residue 437: GLU, Nonterminal, was not found in name map.)
+(Residue 438: GLN, Nonterminal, was not found in name map.)
+(Residue 439: LEU, Nonterminal, was not found in name map.)
+(Residue 440: GLU, Nonterminal, was not found in name map.)
+(Residue 441: LYS, Nonterminal, was not found in name map.)
+(Residue 442: ALA, Nonterminal, was not found in name map.)
+(Residue 443: LEU, Nonterminal, was not found in name map.)
+(Residue 444: ASP, Nonterminal, was not found in name map.)
+(Residue 445: CYS, Nonterminal, was not found in name map.)
+(Residue 446: GLN, Nonterminal, was not found in name map.)
+(Residue 447: ILE, Nonterminal, was not found in name map.)
+(Residue 448: TYR, Nonterminal, was not found in name map.)
+(Residue 449: GLY, Nonterminal, was not found in name map.)
+(Residue 450: ALA, Nonterminal, was not found in name map.)
+(Residue 451: CYS, Nonterminal, was not found in name map.)
+(Residue 452: TYR, Nonterminal, was not found in name map.)
+(Residue 453: SER, Nonterminal, was not found in name map.)
+(Residue 454: ILE, Nonterminal, was not found in name map.)
+(Residue 455: GLU, Nonterminal, was not found in name map.)
+(Residue 456: PRO, Nonterminal, was not found in name map.)
+(Residue 457: LEU, Nonterminal, was not found in name map.)
+(Residue 458: ASP, Nonterminal, was not found in name map.)
+(Residue 459: LEU, Nonterminal, was not found in name map.)
+(Residue 460: PRO, Nonterminal, was not found in name map.)
+(Residue 461: GLN, Nonterminal, was not found in name map.)
+(Residue 462: ILE, Nonterminal, was not found in name map.)
+(Residue 463: ILE, Nonterminal, was not found in name map.)
+(Residue 464: GLU, Nonterminal, was not found in name map.)
+(Residue 465: ARG, Nonterminal, was not found in name map.)
+(Residue 466: LEU, Nonterminal, was not found in name map.)
+(Residue 467: HIS, Nonterminal, was not found in name map.)
+(Residue 468: GLY, Nonterminal, was not found in name map.)
+(Residue 469: LEU, Nonterminal, was not found in name map.)
+(Residue 470: SER, Nonterminal, was not found in name map.)
+(Residue 471: ALA, Nonterminal, was not found in name map.)
+(Residue 472: PHE, Nonterminal, was not found in name map.)
+(Residue 473: SER, Nonterminal, was not found in name map.)
+(Residue 474: LEU, Nonterminal, was not found in name map.)
+(Residue 475: HIS, Nonterminal, was not found in name map.)
+(Residue 476: SER, Nonterminal, was not found in name map.)
+(Residue 477: TYR, Nonterminal, was not found in name map.)
+(Residue 478: SER, Nonterminal, was not found in name map.)
+(Residue 479: PRO, Nonterminal, was not found in name map.)
+(Residue 480: GLY, Nonterminal, was not found in name map.)
+(Residue 481: GLU, Nonterminal, was not found in name map.)
+(Residue 482: ILE, Nonterminal, was not found in name map.)
+(Residue 483: ASN, Nonterminal, was not found in name map.)
+(Residue 484: ARG, Nonterminal, was not found in name map.)
+(Residue 485: VAL, Nonterminal, was not found in name map.)
+(Residue 486: ALA, Nonterminal, was not found in name map.)
+(Residue 487: SER, Nonterminal, was not found in name map.)
+(Residue 488: CYS, Nonterminal, was not found in name map.)
+(Residue 489: LEU, Nonterminal, was not found in name map.)
+(Residue 490: ARG, Nonterminal, was not found in name map.)
+(Residue 491: LYS, Nonterminal, was not found in name map.)
+(Residue 492: LEU, Nonterminal, was not found in name map.)
+(Residue 493: GLY, Nonterminal, was not found in name map.)
+(Residue 494: VAL, Nonterminal, was not found in name map.)
+(Residue 495: PRO, Nonterminal, was not found in name map.)
+(Residue 496: PRO, Nonterminal, was not found in name map.)
+(Residue 497: LEU, Nonterminal, was not found in name map.)
+(Residue 498: ARG, Nonterminal, was not found in name map.)
+(Residue 499: VAL, Nonterminal, was not found in name map.)
+(Residue 500: TRP, Nonterminal, was not found in name map.)
+(Residue 501: ARG, Nonterminal, was not found in name map.)
+(Residue 502: HIS, Nonterminal, was not found in name map.)
+(Residue 503: ARG, Nonterminal, was not found in name map.)
+(Residue 504: ALA, Nonterminal, was not found in name map.)
+(Residue 505: ARG, Nonterminal, was not found in name map.)
+(Residue 506: SER, Nonterminal, was not found in name map.)
+(Residue 507: VAL, Nonterminal, was not found in name map.)
+(Residue 508: ARG, Nonterminal, was not found in name map.)
+(Residue 509: ALA, Nonterminal, was not found in name map.)
+(Residue 510: LYS, Nonterminal, was not found in name map.)
+(Residue 511: LEU, Nonterminal, was not found in name map.)
+(Residue 512: LEU, Nonterminal, was not found in name map.)
+(Residue 513: SER, Nonterminal, was not found in name map.)
+(Residue 514: GLN, Nonterminal, was not found in name map.)
+(Residue 515: GLY, Nonterminal, was not found in name map.)
+(Residue 516: GLY, Nonterminal, was not found in name map.)
+(Residue 517: ARG, Nonterminal, was not found in name map.)
+(Residue 518: ALA, Nonterminal, was not found in name map.)
+(Residue 519: ALA, Nonterminal, was not found in name map.)
+(Residue 520: ILE, Nonterminal, was not found in name map.)
+(Residue 521: CYS, Nonterminal, was not found in name map.)
+(Residue 522: GLY, Nonterminal, was not found in name map.)
+(Residue 523: LYS, Nonterminal, was not found in name map.)
+(Residue 524: TYR, Nonterminal, was not found in name map.)
+(Residue 525: LEU, Nonterminal, was not found in name map.)
+(Residue 526: PHE, Nonterminal, was not found in name map.)
+(Residue 527: ASN, Nonterminal, was not found in name map.)
+(Residue 528: TRP, Nonterminal, was not found in name map.)
+(Residue 529: ALA, Nonterminal, was not found in name map.)
+(Residue 530: VAL, Nonterminal, was not found in name map.)
+(Residue 531: ARG, Nonterminal, was not found in name map.)
+(Residue 532: THR, Nonterminal, was not found in name map.)
+(Residue 533: LYS, Nonterminal, was not found in name map.)
+(Residue 534: LEU, Nonterminal, was not found in name map.)
+(Residue 535: LYS, Nonterminal, was not found in name map.)
+(Residue 536: LEU, Nonterminal, was not found in name map.)
+(Residue 537: THR, Nonterminal, was not found in name map.)
+(Residue 538: PRO, Nonterminal, was not found in name map.)
+(Residue 539: ILE, Nonterminal, was not found in name map.)
+(Residue 540: PRO, Nonterminal, was not found in name map.)
+(Residue 541: ALA, Nonterminal, was not found in name map.)
+(Residue 542: ALA, Nonterminal, was not found in name map.)
+(Residue 543: SER, Nonterminal, was not found in name map.)
+(Residue 544: ARG, Nonterminal, was not found in name map.)
+(Residue 545: LEU, Nonterminal, was not found in name map.)
+(Residue 546: LEU, Nonterminal, was not found in name map.)
+(Residue 547: LEU, Nonterminal, was not found in name map.)
+(Residue 548: SER, Nonterminal, was not found in name map.)
+(Residue 549: GLY, Nonterminal, was not found in name map.)
+(Residue 550: TRP, Nonterminal, was not found in name map.)
+(Residue 551: PHE, Nonterminal, was not found in name map.)
+(Residue 552: VAL, Nonterminal, was not found in name map.)
+(Residue 553: ALA, Nonterminal, was not found in name map.)
+(Residue 554: GLY, Nonterminal, was not found in name map.)
+(Residue 555: TYR, Nonterminal, was not found in name map.)
+(Residue 556: SER, Nonterminal, was not found in name map.)
+(Residue 557: GLY, Nonterminal, was not found in name map.)
+(Residue 558: GLY, Nonterminal, was not found in name map.)
+(Residue 559: ASP, Nonterminal, was not found in name map.)
+(Residue 560: ILE, Nonterminal, was not found in name map.)
+(Residue 561: TYR, Nonterminal, was not found in name map.)
+(Residue 562: HIS, Nonterminal, was not found in name map.)
+Mapped residue SER, term: Terminal/last, seq. number: 563 to: CSER.
+Joining NMET - SER
+Joining SER - MET
+Joining MET - SER
+Joining SER - TYR
+Joining TYR - THR
+Joining THR - TRP
+Joining TRP - THR
+Joining THR - GLY
+Joining GLY - ALA
+Joining ALA - LEU
+Joining LEU - ILE
+Joining ILE - THR
+Joining THR - PRO
+Joining PRO - CYS
+Joining CYS - ALA
+Joining ALA - ALA
+Joining ALA - GLU
+Joining GLU - GLU
+Joining GLU - SER
+Joining SER - LYS
+Joining LYS - LEU
+Joining LEU - PRO
+Joining PRO - ILE
+Joining ILE - ASN
+Joining ASN - ALA
+Joining ALA - LEU
+Joining LEU - SER
+Joining SER - ASN
+Joining ASN - SER
+Joining SER - LEU
+Joining LEU - LEU
+Joining LEU - ARG
+Joining ARG - HIE
+Joining HIE - HIE
+Joining HIE - ASN
+Joining ASN - LEU
+Joining LEU - VAL
+Joining VAL - TYR
+Joining TYR - SER
+Joining SER - THR
+Joining THR - THR
+Joining THR - SER
+Joining SER - ARG
+Joining ARG - SER
+Joining SER - ALA
+Joining ALA - SER
+Joining SER - LEU
+Joining LEU - ARG
+Joining ARG - GLN
+Joining GLN - LYS
+Joining LYS - LYS
+Joining LYS - VAL
+Joining VAL - THR
+Joining THR - PHE
+Joining PHE - ASP
+Joining ASP - ARG
+Joining ARG - LEU
+Joining LEU - GLN
+Joining GLN - VAL
+Joining VAL - LEU
+Joining LEU - ASP
+Joining ASP - ASP
+Joining ASP - HIE
+Joining HIE - TYR
+Joining TYR - ARG
+Joining ARG - ASP
+Joining ASP - VAL
+Joining VAL - LEU
+Joining LEU - LYS
+Joining LYS - GLU
+Joining GLU - MET
+Joining MET - LYS
+Joining LYS - ALA
+Joining ALA - LYS
+Joining LYS - ALA
+Joining ALA - SER
+Joining SER - THR
+Joining THR - VAL
+Joining VAL - LYS
+Joining LYS - ALA
+Joining ALA - LYS
+Joining LYS - LEU
+Joining LEU - LEU
+Joining LEU - SER
+Joining SER - VAL
+Joining VAL - GLU
+Joining GLU - GLU
+Joining GLU - ALA
+Joining ALA - CYS
+Joining CYS - LYS
+Joining LYS - LEU
+Joining LEU - THR
+Joining THR - PRO
+Joining PRO - PRO
+Joining PRO - HIE
+Joining HIE - SER
+Joining SER - ALA
+Joining ALA - LYS
+Joining LYS - SER
+Joining SER - LYS
+Joining LYS - PHE
+Joining PHE - GLY
+Joining GLY - TYR
+Joining TYR - GLY
+Joining GLY - ALA
+Joining ALA - LYS
+Joining LYS - ASP
+Joining ASP - VAL
+Joining VAL - ARG
+Joining ARG - SER
+Joining SER - LEU
+Joining LEU - SER
+Joining SER - SER
+Joining SER - ARG
+Joining ARG - ALA
+Joining ALA - VAL
+Joining VAL - ASN
+Joining ASN - HIE
+Joining HIE - ILE
+Joining ILE - ARG
+Joining ARG - SER
+Joining SER - VAL
+Joining VAL - TRP
+Joining TRP - LYS
+Joining LYS - ASP
+Joining ASP - LEU
+Joining LEU - LEU
+Joining LEU - GLU
+Joining GLU - ASP
+Joining ASP - THR
+Joining THR - ASP
+Joining ASP - THR
+Joining THR - PRO
+Joining PRO - ILE
+Joining ILE - GLN
+Joining GLN - THR
+Joining THR - THR
+Joining THR - ILE
+Joining ILE - MET
+Joining MET - ALA
+Joining ALA - LYS
+Joining LYS - ASN
+Joining ASN - GLU
+Joining GLU - VAL
+Joining VAL - PHE
+Joining PHE - CYS
+Joining CYS - VAL
+Joining VAL - GLN
+Joining GLN - PRO
+Joining PRO - GLU
+Joining GLU - LYS
+Joining LYS - GLY
+Joining GLY - GLY
+Joining GLY - ARG
+Joining ARG - LYS
+Joining LYS - PRO
+Joining PRO - ALA
+Joining ALA - ARG
+Joining ARG - LEU
+Joining LEU - ILE
+Joining ILE - VAL
+Joining VAL - PHE
+Joining PHE - PRO
+Joining PRO - ASP
+Joining ASP - LEU
+Joining LEU - GLY
+Joining GLY - VAL
+Joining VAL - ARG
+Joining ARG - VAL
+Joining VAL - CYS
+Joining CYS - GLU
+Joining GLU - LYS
+Joining LYS - MET
+Joining MET - ALA
+Joining ALA - LEU
+Joining LEU - TYR
+Joining TYR - ASP
+Joining ASP - VAL
+Joining VAL - VAL
+Joining VAL - SER
+Joining SER - THR
+Joining THR - LEU
+Joining LEU - PRO
+Joining PRO - GLN
+Joining GLN - ALA
+Joining ALA - VAL
+Joining VAL - MET
+Joining MET - GLY
+Joining GLY - SER
+Joining SER - SER
+Joining SER - TYR
+Joining TYR - GLY
+Joining GLY - PHE
+Joining PHE - GLN
+Joining GLN - TYR
+Joining TYR - SER
+Joining SER - PRO
+Joining PRO - LYS
+Joining LYS - GLN
+Joining GLN - ARG
+Joining ARG - VAL
+Joining VAL - GLU
+Joining GLU - PHE
+Joining PHE - LEU
+Joining LEU - VAL
+Joining VAL - ASN
+Joining ASN - THR
+Joining THR - TRP
+Joining TRP - LYS
+Joining LYS - ALA
+Joining ALA - LYS
+Joining LYS - LYS
+Joining LYS - CYS
+Joining CYS - PRO
+Joining PRO - MET
+Joining MET - GLY
+Joining GLY - PHE
+Joining PHE - SER
+Joining SER - TYR
+Joining TYR - ASP
+Joining ASP - THR
+Joining THR - ARG
+Joining ARG - CYS
+Joining CYS - PHE
+Joining PHE - ASP
+Joining ASP - SER
+Joining SER - THR
+Joining THR - VAL
+Joining VAL - THR
+Joining THR - GLU
+Joining GLU - ASN
+Joining ASN - ASP
+Joining ASP - ILE
+Joining ILE - ARG
+Joining ARG - VAL
+Joining VAL - GLU
+Joining GLU - GLU
+Joining GLU - SER
+Joining SER - ILE
+Joining ILE - TYR
+Joining TYR - GLN
+Joining GLN - CYS
+Joining CYS - CYS
+Joining CYS - ASP
+Joining ASP - LEU
+Joining LEU - ALA
+Joining ALA - PRO
+Joining PRO - GLU
+Joining GLU - ALA
+Joining ALA - ARG
+Joining ARG - GLN
+Joining GLN - ALA
+Joining ALA - ILE
+Joining ILE - ARG
+Joining ARG - SER
+Joining SER - LEU
+Joining LEU - THR
+Joining THR - GLU
+Joining GLU - ARG
+Joining ARG - LEU
+Joining LEU - TYR
+Joining TYR - VAL
+Joining VAL - GLY
+Joining GLY - GLY
+Joining GLY - PRO
+Joining PRO - MET
+Joining MET - THR
+Joining THR - ASN
+Joining ASN - SER
+Joining SER - LYS
+Joining LYS - GLY
+Joining GLY - GLN
+Joining GLN - ASN
+Joining ASN - CYS
+Joining CYS - GLY
+Joining GLY - TYR
+Joining TYR - ARG
+Joining ARG - ARG
+Joining ARG - CYS
+Joining CYS - ARG
+Joining ARG - ALA
+Joining ALA - SER
+Joining SER - GLY
+Joining GLY - VAL
+Joining VAL - LEU
+Joining LEU - THR
+Joining THR - THR
+Joining THR - SER
+Joining SER - CYS
+Joining CYS - GLY
+Joining GLY - ASN
+Joining ASN - THR
+Joining THR - LEU
+Joining LEU - THR
+Joining THR - CYS
+Joining CYS - TYR
+Joining TYR - LEU
+Joining LEU - LYS
+Joining LYS - ALA
+Joining ALA - ALA
+Joining ALA - ALA
+Joining ALA - ALA
+Joining ALA - CYS
+Joining CYS - ARG
+Joining ARG - ALA
+Joining ALA - ALA
+Joining ALA - LYS
+Joining LYS - LEU
+Joining LEU - GLN
+Joining GLN - ASP
+Joining ASP - CYS
+Joining CYS - THR
+Joining THR - MET
+Joining MET - LEU
+Joining LEU - VAL
+Joining VAL - ASN
+Joining ASN - GLY
+Joining GLY - ASP
+Joining ASP - ASP
+Joining ASP - LEU
+Joining LEU - VAL
+Joining VAL - VAL
+Joining VAL - ILE
+Joining ILE - CYS
+Joining CYS - GLU
+Joining GLU - SER
+Joining SER - ALA
+Joining ALA - GLY
+Joining GLY - THR
+Joining THR - GLN
+Joining GLN - GLU
+Joining GLU - ASP
+Joining ASP - ALA
+Joining ALA - ALA
+Joining ALA - SER
+Joining SER - LEU
+Joining LEU - ARG
+Joining ARG - VAL
+Joining VAL - PHE
+Joining PHE - THR
+Joining THR - GLU
+Joining GLU - ALA
+Joining ALA - MET
+Joining MET - THR
+Joining THR - ARG
+Joining ARG - TYR
+Joining TYR - SER
+Joining SER - ALA
+Joining ALA - PRO
+Joining PRO - PRO
+Joining PRO - GLY
+Joining GLY - ASP
+Joining ASP - PRO
+Joining PRO - PRO
+Joining PRO - GLN
+Joining GLN - PRO
+Joining PRO - GLU
+Joining GLU - TYR
+Joining TYR - ASP
+Joining ASP - LEU
+Joining LEU - GLU
+Joining GLU - LEU
+Joining LEU - ILE
+Joining ILE - THR
+Joining THR - SER
+Joining SER - CYS
+Joining CYS - SER
+Joining SER - SER
+Joining SER - ASN
+Joining ASN - VAL
+Joining VAL - SER
+Joining SER - VAL
+Joining VAL - ALA
+Joining ALA - HIE
+Joining HIE - ASP
+Joining ASP - ALA
+Joining ALA - SER
+Joining SER - GLY
+Joining GLY - LYS
+Joining LYS - ARG
+Joining ARG - VAL
+Joining VAL - TYR
+Joining TYR - TYR
+Joining TYR - LEU
+Joining LEU - THR
+Joining THR - ARG
+Joining ARG - ASP
+Joining ASP - PRO
+Joining PRO - THR
+Joining THR - VAL
+Joining VAL - PRO
+Joining PRO - LEU
+Joining LEU - ALA
+Joining ALA - ARG
+Joining ARG - ALA
+Joining ALA - ALA
+Joining ALA - TRP
+Joining TRP - GLU
+Joining GLU - THR
+Joining THR - ALA
+Joining ALA - ARG
+Joining ARG - HIE
+Joining HIE - THR
+Joining THR - PRO
+Joining PRO - VAL
+Joining VAL - ASN
+Joining ASN - SER
+Joining SER - TRP
+Joining TRP - LEU
+Joining LEU - GLY
+Joining GLY - ASN
+Joining ASN - ILE
+Joining ILE - ILE
+Joining ILE - MET
+Joining MET - TYR
+Joining TYR - ALA
+Joining ALA - PRO
+Joining PRO - THR
+Joining THR - LEU
+Joining LEU - TRP
+Joining TRP - ALA
+Joining ALA - ARG
+Joining ARG - MET
+Joining MET - ILE
+Joining ILE - LEU
+Joining LEU - MET
+Joining MET - THR
+Joining THR - HIE
+Joining HIE - PHE
+Joining PHE - PHE
+Joining PHE - SER
+Joining SER - ILE
+Joining ILE - LEU
+Joining LEU - LEU
+Joining LEU - ALA
+Joining ALA - GLN
+Joining GLN - GLU
+Joining GLU - GLN
+Joining GLN - LEU
+Joining LEU - GLU
+Joining GLU - LYS
+Joining LYS - ALA
+Joining ALA - LEU
+Joining LEU - ASP
+Joining ASP - CYS
+Joining CYS - GLN
+Joining GLN - ILE
+Joining ILE - TYR
+Joining TYR - GLY
+Joining GLY - ALA
+Joining ALA - CYS
+Joining CYS - TYR
+Joining TYR - SER
+Joining SER - ILE
+Joining ILE - GLU
+Joining GLU - PRO
+Joining PRO - LEU
+Joining LEU - ASP
+Joining ASP - LEU
+Joining LEU - PRO
+Joining PRO - GLN
+Joining GLN - ILE
+Joining ILE - ILE
+Joining ILE - GLU
+Joining GLU - ARG
+Joining ARG - LEU
+Joining LEU - HIE
+Joining HIE - GLY
+Joining GLY - LEU
+Joining LEU - SER
+Joining SER - ALA
+Joining ALA - PHE
+Joining PHE - SER
+Joining SER - LEU
+Joining LEU - HIE
+Joining HIE - SER
+Joining SER - TYR
+Joining TYR - SER
+Joining SER - PRO
+Joining PRO - GLY
+Joining GLY - GLU
+Joining GLU - ILE
+Joining ILE - ASN
+Joining ASN - ARG
+Joining ARG - VAL
+Joining VAL - ALA
+Joining ALA - SER
+Joining SER - CYS
+Joining CYS - LEU
+Joining LEU - ARG
+Joining ARG - LYS
+Joining LYS - LEU
+Joining LEU - GLY
+Joining GLY - VAL
+Joining VAL - PRO
+Joining PRO - PRO
+Joining PRO - LEU
+Joining LEU - ARG
+Joining ARG - VAL
+Joining VAL - TRP
+Joining TRP - ARG
+Joining ARG - HIE
+Joining HIE - ARG
+Joining ARG - ALA
+Joining ALA - ARG
+Joining ARG - SER
+Joining SER - VAL
+Joining VAL - ARG
+Joining ARG - ALA
+Joining ALA - LYS
+Joining LYS - LEU
+Joining LEU - LEU
+Joining LEU - SER
+Joining SER - GLN
+Joining GLN - GLY
+Joining GLY - GLY
+Joining GLY - ARG
+Joining ARG - ALA
+Joining ALA - ALA
+Joining ALA - ILE
+Joining ILE - CYS
+Joining CYS - GLY
+Joining GLY - LYS
+Joining LYS - TYR
+Joining TYR - LEU
+Joining LEU - PHE
+Joining PHE - ASN
+Joining ASN - TRP
+Joining TRP - ALA
+Joining ALA - VAL
+Joining VAL - ARG
+Joining ARG - THR
+Joining THR - LYS
+Joining LYS - LEU
+Joining LEU - LYS
+Joining LYS - LEU
+Joining LEU - THR
+Joining THR - PRO
+Joining PRO - ILE
+Joining ILE - PRO
+Joining PRO - ALA
+Joining ALA - ALA
+Joining ALA - SER
+Joining SER - ARG
+Joining ARG - LEU
+Joining LEU - LEU
+Joining LEU - LEU
+Joining LEU - SER
+Joining SER - GLY
+Joining GLY - TRP
+Joining TRP - PHE
+Joining PHE - VAL
+Joining VAL - ALA
+Joining ALA - GLY
+Joining GLY - TYR
+Joining TYR - SER
+Joining SER - GLY
+Joining GLY - GLY
+Joining GLY - ASP
+Joining ASP - ILE
+Joining ILE - TYR
+Joining TYR - HIE
+Joining HIE - CSER
+  Added missing heavy atom: .R<CSER 563>.A<OXT 12>
+  total atoms in file: 4390
+  Leap added 4429 missing atoms according to residue templates:
+       1 Heavy
+       4428 H / lone pairs
+> savepdb  protein  protein.pdb
+Writing pdb file: protein.pdb
+ Converting N-terminal residue name to PDB format: NMET -> MET
+ Converting C-terminal residue name to PDB format: CSER -> SER
+> ##saveamberparm dipepide diVAL.prmtop diVAL.inpcrd
+> 
+> quit
+	Quit

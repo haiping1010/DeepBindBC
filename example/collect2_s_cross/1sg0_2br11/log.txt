@@ -1,0 +1,2 @@
+1sg0_processed.pdb
+1sg0_proc

@@ -1,0 +1,2 @@
+1tow_processed.pdb
+1tow_proc

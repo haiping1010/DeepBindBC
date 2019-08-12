@@ -1,0 +1,2 @@
+1xoz_processed.pdb
+1xoz_proc

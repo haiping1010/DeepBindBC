@@ -1,0 +1,2 @@
+1n2j_processed.pdb
+1n2j_proc

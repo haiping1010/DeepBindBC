@@ -1,0 +1,463 @@
+1g9v_poc.pdb    17.8913   15.5955   41.6263
+1g9v_w.pdb    10.3407   13.3195   39.9725
+1gkc_poc.pdb    63.3015   27.3026  116.8268
+1gkc_w.pdb    54.5893   21.2422  129.5356
+1gm8_poc.pdb    16.8857    0.8315    3.9095
+1gm8_w.pdb    14.9124    0.0630    3.8004
+1hq2_poc.pdb    -7.7404    7.6613   16.7405
+1hq2_w.pdb    -6.8078   -0.1142   13.2165
+1hwi_poc.pdb    32.6701   -6.7920   -7.3730
+1hwi_w.pdb    30.1091   -1.0503   12.3138
+1ia1_poc.pdb     8.9995   35.2762   18.3935
+1ia1_w.pdb    18.3947   16.0527   11.2367
+1ig3_poc.pdb    22.0059   43.8341   19.3922
+1ig3_w.pdb    17.3038   57.4670   15.3327
+1j3j_poc.pdb    28.3797    5.1462   58.5855
+1j3j_w.pdb    29.6923    2.1316   23.8760
+1jla_poc.pdb    -2.0294  -35.5510   25.7561
+1jla_w.pdb    24.0393  -21.4394   19.3472
+1k3u_poc.pdb    48.5938   27.8439   12.7113
+1k3u_w.pdb    65.6325   17.9036   15.3525
+1l7f_poc.pdb    25.3631   17.7398   60.6457
+1l7f_w.pdb    18.4127   21.1699   54.5118
+1m2z_poc.pdb    31.2700    7.5712   12.8556
+1m2z_w.pdb    31.4634   20.4149   -0.1489
+1meh_poc.pdb    57.7233   54.4663   18.6901
+1meh_w.pdb    66.4164   47.4018   21.7249
+1mmv_poc.pdb    14.1894   -0.4373   59.8573
+1mmv_w.pdb    11.7792    4.7728   41.3638
+1n2j_poc.pdb    32.3497   34.8042   48.1153
+1n2j_w.pdb    25.8783   24.6282   59.0395
+1nav_poc.pdb    48.5594   18.2184   20.2308
+1nav_w.pdb    43.1624   12.3690   26.5928
+1of1_poc.pdb    20.3707   23.0179   10.3115
+1of1_w.pdb    31.8849   35.0392    9.2545
+1of6_poc.pdb    31.6834   -0.8553   49.2697
+1of6_w.pdb    50.8530   30.4528   62.1644
+1opk_poc.pdb    45.1516   19.6328   18.9615
+1opk_w.pdb    34.6157   20.7376    8.6579
+1p2y_poc.pdb    17.2597   12.7626   42.0002
+1p2y_w.pdb    15.5595    8.2754   44.5078
+1p62_poc.pdb    67.3573   34.8272   18.8515
+1p62_w.pdb    65.0069   40.5995   15.9949
+1q4g_poc.pdb    68.6261   22.9370  189.8077
+1q4g_w.pdb    46.7563   33.3654  189.0914
+1r55_poc.pdb    12.4801   17.4982   28.4020
+1r55_w.pdb    15.7664   20.5558   34.7434
+1r9o_poc.pdb     8.8354   32.7698   -1.6486
+1r9o_w.pdb     2.8634   25.8739   -0.1790
+1s3v_poc.pdb    -1.0032   30.5618    2.8963
+1s3v_w.pdb     0.6241   35.7937    5.2221
+1sg0_poc.pdb    36.9765   17.3014   29.5675
+1sg0_w.pdb    33.3332   14.9796   17.4300
+1sq5_poc.pdb    51.8701    3.9869    7.3314
+1sq5_w.pdb    53.8896    5.1146    6.6577
+1t40_poc.pdb    15.2647   -4.3507   14.3801
+1t40_w.pdb    14.2442    0.0294   23.5804
+1t9b_poc.pdb    -6.7990   51.3651  121.8908
+1t9b_w.pdb     9.9328   41.1097  127.9541
+1tz8_poc.pdb    15.4312   61.7838   34.4476
+1tz8_w.pdb    20.6413   59.6634   14.8101
+1u1c_poc.pdb    11.5839  136.5795   46.4767
+1u1c_w.pdb    -0.1516  124.8058   69.0066
+1u4d_poc.pdb    55.4914   18.3502   41.3998
+1u4d_w.pdb    40.2140   15.1154   57.6964
+1v4s_poc.pdb    39.2994   14.0434   62.9905
+1v4s_w.pdb    27.4671    1.6157   68.5726
+1x8x_poc.pdb     9.6798   29.3992   16.2731
+1x8x_w.pdb     5.5414   28.7519   23.3373
+1ygc_poc.pdb    15.6987   39.6617   33.2996
+1ygc_w.pdb    23.2352   33.6971   39.0319
+1yv3_poc.pdb    21.6458   38.0570   37.9398
+1yv3_w.pdb    21.8082   36.9234   46.2026
+2bm2_poc.pdb    44.2386  114.1335   81.3442
+2bm2_w.pdb    33.6033   94.2993   88.9341
+2bsm_poc.pdb    30.8006   10.9664   25.4210
+2bsm_w.pdb    32.0373   14.3674   20.3525
+File contains atoms of unknown type (Fe)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Fe)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Fe)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Fe)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+File contains atoms of unknown type (Xx)
+Will assign them mass of carbon (12.011 g/mol)
+To fix, edit ATOM_WEIGHTS dictionary in pdb_data/common.py
+protein_n.pdb    10.2983   13.2656   39.9688
+Warning.  No element entries in file.  Attempting to extract
+from the atom names.  Not always reliable...
+protein.pdb    10.3403   13.3222   39.9721
+1g9v_poc.pdb    17.8913   15.5955   41.6263
+1g9v_ww.pdb    10.3407   13.3195   39.9725
+1gkc_poc.pdb    63.3015   27.3026  116.8268
+1gkc_ww.pdb    54.5893   21.2422  129.5356
+1gm8_poc.pdb    16.8857    0.8315    3.9095
+1gm8_ww.pdb    14.9124    0.0630    3.8004
+1gpk_ww.pdb     5.0541   64.5870   56.2543
+1hnn_ww.pdb    13.0547   37.2069   18.3517
+1hp0_ww.pdb    24.4803   32.3175   24.2433
+1hq2_poc.pdb    -7.7404    7.6613   16.7405
+1hq2_ww.pdb    -6.8078   -0.1142   13.2165
+1hvy_ww.pdb    26.1734   19.5370   17.0845
+1hwi_poc.pdb    32.6701   -6.7920   -7.3730
+1hwi_ww.pdb    30.1091   -1.0503   12.3138
+1hww_ww.pdb    39.7093   62.3128   -7.2302
+1ia1_poc.pdb     8.9995   35.2762   18.3935
+1ia1_ww.pdb    18.3947   16.0527   11.2367
+1ig3_poc.pdb    22.0059   43.8341   19.3922
+1ig3_ww.pdb    17.3038   57.4670   15.3327
+1j3j_poc.pdb    28.3797    5.1462   58.5855
+1j3j_ww.pdb    29.6923    2.1316   23.8760
+1jd0_ww.pdb     4.5430   -6.4612   23.2007
+1jje_ww.pdb    33.9670   16.6784   18.5927
+1jla_poc.pdb    -2.0294  -35.5510   25.7561
+1jla_ww.pdb    24.0393  -21.4394   19.3472
+1k3u_poc.pdb    48.5938   27.8439   12.7113
+1k3u_ww.pdb    65.6325   17.9036   15.3525
+1ke5_ww.pdb     4.3088   50.3909   38.3514
+1kzk_ww.pdb    20.4965    1.0647   12.7340
+1l2s_ww.pdb    51.5201   -1.0281   22.8781
+1l7f_poc.pdb    25.3631   17.7398   60.6457
+1l7f_ww.pdb    18.4127   21.1699   54.5118
+1lpz_ww.pdb    22.9431   13.1827   24.9948
+1lrh_ww.pdb    40.3204   49.7313   52.4433
+1m2z_poc.pdb    31.2700    7.5712   12.8556
+1m2z_ww.pdb    31.4634   20.4149   -0.1489
+1meh_poc.pdb    57.7233   54.4663   18.6901
+1meh_ww.pdb    66.4164   47.4018   21.7249
+1mmv_poc.pdb    14.1894   -0.4373   59.8573
+1mmv_ww.pdb    11.7792    4.7728   41.3638
+1mzc_ww.pdb    19.3143  126.7439   -1.4230
+1n1m_ww.pdb   101.5280   68.1887   98.6068
+1n2j_poc.pdb    32.3497   34.8042   48.1153
+1n2j_ww.pdb    25.8783   24.6282   59.0395
+1n2v_ww.pdb    15.2230   10.2689   16.2846
+1n46_ww.pdb    13.1465   -6.0850  -12.9387
+1nav_poc.pdb    48.5594   18.2184   20.2308
+1nav_ww.pdb    43.1624   12.3690   26.5928
+1of1_poc.pdb    20.3707   23.0179   10.3115
+1of1_ww.pdb    31.8849   35.0392    9.2545
+
+1of6_ww.pdb    50.8530   30.4528   62.1644
+1opk_poc.pdb    45.1516   19.6328   18.9615
+1opk_ww.pdb    34.6157   20.7376    8.6579
+1oq5_ww.pdb    11.4802    0.0628   15.7809
+1owe_ww.pdb    13.9741   10.0183   29.9526
+1oyt_ww.pdb    12.6226    0.1520   19.9793
+1p2y_poc.pdb    17.2597   12.7626   42.0002
+1p2y_ww.pdb    15.5595    8.2754   44.5078
+1p62_poc.pdb    67.3573   34.8272   18.8515
+1p62_ww.pdb    65.0069   40.5995   15.9949
+1pmn_ww.pdb    17.2558   15.6917   22.9735
+1q1g_ww.pdb    34.5800   12.4883   89.5778
+1q41_ww.pdb    24.5518   -0.3162   21.3921
+1q4g_poc.pdb    68.6261   22.9370  189.8077
+1q4g_ww.pdb    46.7563   33.3654  189.0914
+1r1h_ww.pdb    23.7804   37.0799   32.4808
+1r55_poc.pdb    12.4801   17.4982   28.4020
+1r55_ww.pdb    15.7664   20.5558   34.7434
+1r58_ww.pdb    21.6919   24.9970   14.5323
+1r9o_poc.pdb     8.8354   32.7698   -1.6486
+1r9o_ww.pdb     2.8634   25.8739   -0.1790
+1s19_ww.pdb    13.4150   20.8267   41.9760
+1s3v_poc.pdb    -1.0032   30.5618    2.8963
+1s3v_ww.pdb     0.6241   35.7937    5.2221
+1sg0_poc.pdb    36.9765   17.3014   29.5675
+1sg0_ww.pdb    33.3332   14.9796   17.4300
+1sj0_ww.pdb    22.5409    5.5441   22.0499
+1sq5_poc.pdb    51.8701    3.9869    7.3314
+1sq5_ww.pdb    53.8896    5.1146    6.6577
+1sqn_ww.pdb    10.6705    9.9363   17.5515
+1t40_poc.pdb    15.2647   -4.3507   14.3801
+1t40_ww.pdb    14.2442    0.0294   23.5804
+1t46_ww.pdb    31.9177   25.9381   35.0357
+1t9b_poc.pdb    -6.7990   51.3651  121.8908
+1t9b_ww.pdb     9.9328   41.1097  127.9541
+1tow_ww.pdb    17.5450    3.9276    5.4364
+1tt1_ww.pdb     2.4981   13.4360   15.2123
+1tz8_poc.pdb    15.4312   61.7838   34.4476
+1tz8_ww.pdb    20.6413   59.6634   14.8101
+1u1c_poc.pdb    11.5839  136.5795   46.4767
+1u1c_ww.pdb    -0.1516  124.8058   69.0066
+1u4d_poc.pdb    55.4914   18.3502   41.3998
+1u4d_ww.pdb    40.2140   15.1154   57.6964
+1uml_ww.pdb    58.6583   52.1868   23.9009
+1unl_ww.pdb    15.9427   35.3257   52.6104
+1uou_ww.pdb    -2.6652    0.5015   23.4150
+1v0p_ww.pdb    23.1220   15.0111   20.0596
+1v48_ww.pdb    75.2995   34.2857   43.1773
+1v4s_poc.pdb    39.2994   14.0434   62.9905
+1v4s_ww.pdb    27.4671    1.6157   68.5726
+1vcj_ww.pdb    37.9746  -14.8208   55.4811
+1w1p_ww.pdb    31.9218   58.9369   77.0670
+1w2g_ww.pdb    36.7701   29.9153   73.2596
+1x8x_poc.pdb     9.6798   29.3992   16.2731
+1x8x_ww.pdb     5.5414   28.7519   23.3373
+1xm6_ww.pdb    66.6708    2.0691    1.3299
+1xoq_ww.pdb    16.8031   24.1198   75.6674
+1xoz_ww.pdb    37.1997   39.8209   20.4717
+1y6b_ww.pdb     5.7961   38.8033   22.9242
+1ygc_poc.pdb    15.6987   39.6617   33.2996
+1ygc_ww.pdb    23.2352   33.6971   39.0319
+1yqy_ww.pdb     9.3747   25.4824   17.3024
+1yv3_poc.pdb    21.6458   38.0570   37.9398
+1yv3_ww.pdb    21.8082   36.9234   46.2026
+1yvf_ww.pdb    -8.0120   53.6849   46.9303
+1ywr_ww.pdb    -6.6135   -3.3947   15.5296
+1z95_ww.pdb    22.1295    5.1316   10.9370
+2bm2_poc.pdb    44.2386  114.1335   81.3442
+2bm2_ww.pdb    33.6033   94.2993   88.9341
+2br1_ww.pdb    14.7892    1.9964   22.2774
+2bsm_poc.pdb    30.8006   10.9664   25.4210
+2bsm_ww.pdb    32.0373   14.3674   20.3525
+1g9v_poc.pdb    17.8913   15.5955   41.6263
+1g9v_ww.pdb    10.3407   13.3195   39.9725
+1gkc_poc.pdb    63.3015   27.3026  116.8268
+1gkc_ww.pdb    54.5893   21.2422  129.5356
+1gm8_poc.pdb    16.8857    0.8315    3.9095
+1gm8_ww.pdb    14.9124    0.0630    3.8004
+1gpk_poc.pdb     3.5073   66.9977   62.6617
+1gpk_ww.pdb     5.0541   64.5870   56.2543
+1hnn_poc.pdb    28.4652   44.7460   16.1501
+1hnn_ww.pdb    13.0547   37.2069   18.3517
+1hp0_poc.pdb    16.6668   26.8411   11.0347
+1hp0_ww.pdb    24.4803   32.3175   24.2433
+1hq2_poc.pdb    -7.7404    7.6613   16.7405
+1hq2_ww.pdb    -6.8078   -0.1142   13.2165
+1hvy_poc.pdb    66.4186   43.9594   26.3553
+1hvy_ww.pdb    26.1734   19.5370   17.0845
+1hwi_poc.pdb    32.6701   -6.7920   -7.3730
+1hwi_ww.pdb    30.1091   -1.0503   12.3138
+1hww_poc.pdb    32.4194   65.4689    6.4441
+1hww_ww.pdb    39.7093   62.3128   -7.2302
+1ia1_poc.pdb     8.9995   35.2762   18.3935
+1ia1_ww.pdb    18.3947   16.0527   11.2367
+1ig3_poc.pdb    22.0059   43.8341   19.3922
+1ig3_ww.pdb    17.3038   57.4670   15.3327
+1j3j_poc.pdb    28.3797    5.1462   58.5855
+1j3j_ww.pdb    29.6923    2.1316   23.8760
+1jd0_poc.pdb   -11.7752   -6.7249   21.6218
+1jd0_ww.pdb     4.5430   -6.4612   23.2007
+1jje_poc.pdb    56.5569   27.6689   32.4992
+1jje_ww.pdb    33.9670   16.6784   18.5927
+1jla_poc.pdb    -2.0294  -35.5510   25.7561
+1jla_ww.pdb    24.0393  -21.4394   19.3472
+1k3u_poc.pdb    48.5938   27.8439   12.7113
+1k3u_ww.pdb    65.6325   17.9036   15.3525
+1ke5_poc.pdb    -7.6558   50.6018   39.7156
+1ke5_ww.pdb     4.3088   50.3909   38.3514
+1kzk_poc.pdb    20.0431   -1.2863   16.0804
+1kzk_ww.pdb    20.4965    1.0647   12.7340
+1l2s_poc.pdb    77.6173    3.7085   29.7543
+1l2s_ww.pdb    51.5201   -1.0281   22.8781
+1l7f_poc.pdb    25.3631   17.7398   60.6457
+1l7f_ww.pdb    18.4127   21.1699   54.5118
+1lpz_poc.pdb    11.8266    6.6439   24.9330
+1lpz_ww.pdb    22.9431   13.1827   24.9948
+1lrh_poc.pdb    34.8055   58.6801   77.6157
+1lrh_ww.pdb    40.3204   49.7313   52.4433
+1m2z_poc.pdb    31.2700    7.5712   12.8556
+1m2z_ww.pdb    31.4634   20.4149   -0.1489
+1meh_poc.pdb    57.7233   54.4663   18.6901
+1meh_ww.pdb    66.4164   47.4018   21.7249
+1mmv_poc.pdb    14.1894   -0.4373   59.8573
+1mmv_ww.pdb    11.7792    4.7728   41.3638
+1mzc_poc.pdb    15.5475  132.1974   -3.1044
+1mzc_ww.pdb    19.3143  126.7439   -1.4230
+1n1m_poc.pdb    82.8051   75.6107   96.7232
+1n1m_ww.pdb   101.5280   68.1887   98.6068
+1n2j_poc.pdb    32.3497   34.8042   48.1153
+1n2j_ww.pdb    25.8783   24.6282   59.0395
+1n2v_poc.pdb    15.0819   16.3104   22.9562
+1n2v_ww.pdb    15.2230   10.2689   16.2846
+1n46_poc.pdb    21.1161    6.7846    1.9937
+1n46_ww.pdb    13.1465   -6.0850  -12.9387
+1nav_poc.pdb    48.5594   18.2184   20.2308
+1nav_ww.pdb    43.1624   12.3690   26.5928
+1of1_poc.pdb    20.3707   23.0179   10.3115
+1of1_ww.pdb    31.8849   35.0392    9.2545
+1of6_poc.pdb    31.6834   -0.8553   49.2697
+1of6_ww.pdb    50.8530   30.4528   62.1644
+1opk_poc.pdb    45.1516   19.6328   18.9615
+1opk_ww.pdb    34.6157   20.7376    8.6579
+1oq5_poc.pdb    16.1197    3.9463   15.1008
+1oq5_ww.pdb    11.4802    0.0628   15.7809
+1owe_poc.pdb    18.9658   16.1440   31.7920
+1owe_ww.pdb    13.9741   10.0183   29.9526
+1oyt_poc.pdb    14.9170   -9.0216   22.8385
+1oyt_ww.pdb    12.6226    0.1520   19.9793
+1p2y_poc.pdb    17.2597   12.7626   42.0002
+1p2y_ww.pdb    15.5595    8.2754   44.5078
+1p62_poc.pdb    67.3573   34.8272   18.8515
+1p62_ww.pdb    65.0069   40.5995   15.9949
+1pmn_poc.pdb    20.0860   11.8855   32.4656
+1pmn_ww.pdb    17.2558   15.6917   22.9735
+1q1g_poc.pdb    32.2214   24.8644   65.6036
+1q1g_ww.pdb    34.5800   12.4883   89.5778
+1q41_poc.pdb    37.9281    7.3367   36.6884
+1q41_ww.pdb    24.5518   -0.3162   21.3921
+1q4g_poc.pdb    68.6261   22.9370  189.8077
+1q4g_ww.pdb    46.7563   33.3654  189.0914
+1r1h_poc.pdb    33.4382   45.9373   35.9023
+1r1h_ww.pdb    23.7804   37.0799   32.4808
+1r55_poc.pdb    12.4801   17.4982   28.4020
+1r55_ww.pdb    15.7664   20.5558   34.7434
+1r58_poc.pdb    19.9385   30.7879   16.4175
+1r58_ww.pdb    21.6919   24.9970   14.5323
+1r9o_poc.pdb     8.8354   32.7698   -1.6486
+1r9o_ww.pdb     2.8634   25.8739   -0.1790
+1s19_poc.pdb    11.6516   22.5424   34.4189
+1s19_ww.pdb    13.4150   20.8267   41.9760
+1s3v_poc.pdb    -1.0032   30.5618    2.8963
+1s3v_ww.pdb     0.6241   35.7937    5.2221
+1sg0_poc.pdb    36.9765   17.3014   29.5675
+1sg0_ww.pdb    33.3332   14.9796   17.4300
+1sj0_poc.pdb    29.9680   -1.2050   24.8416
+1sj0_ww.pdb    22.5409    5.5441   22.0499
+1sq5_poc.pdb    51.8701    3.9869    7.3314
+1sq5_ww.pdb    53.8896    5.1146    6.6577
+1sqn_poc.pdb    11.5804   25.0746    7.9998
+1sqn_ww.pdb    10.6705    9.9363   17.5515
+1t40_poc.pdb    15.2647   -4.3507   14.3801
+1t40_ww.pdb    14.2442    0.0294   23.5804
+1t46_poc.pdb    26.0900   25.4313   40.3047
+1t46_ww.pdb    31.9177   25.9381   35.0357
+1t9b_poc.pdb    -6.7990   51.3651  121.8908
+1t9b_ww.pdb     9.9328   41.1097  127.9541
+1tow_poc.pdb    20.8119    4.2980    3.1578
+1tow_ww.pdb    17.5450    3.9276    5.4364
+1tt1_poc.pdb     2.9334    0.6597   25.0718
+1tt1_ww.pdb     2.4981   13.4360   15.2123
+1tz8_poc.pdb    15.4312   61.7838   34.4476
+1tz8_ww.pdb    20.6413   59.6634   14.8101
+1u1c_poc.pdb    11.5839  136.5795   46.4767
+1u1c_ww.pdb    -0.1516  124.8058   69.0066
+1u4d_poc.pdb    55.4914   18.3502   41.3998
+1u4d_ww.pdb    40.2140   15.1154   57.6964
+1uml_poc.pdb    51.5770   54.0010   20.6679
+1uml_ww.pdb    58.6583   52.1868   23.9009
+1unl_poc.pdb    57.9741   26.2146   27.2674
+1unl_ww.pdb    15.9427   35.3257   52.6104
+1uou_poc.pdb    -3.0090    1.8198   28.6301
+1uou_ww.pdb    -2.6652    0.5015   23.4150
+1v0p_poc.pdb    23.0932    1.0033   36.5871
+1v0p_ww.pdb    23.1220   15.0111   20.0596
+1v48_poc.pdb    74.5628   43.7019   47.0681
+1v48_ww.pdb    75.2995   34.2857   43.1773
+1v4s_poc.pdb    39.2994   14.0434   62.9905
+1v4s_ww.pdb    27.4671    1.6157   68.5726
+1vcj_poc.pdb    32.6787  -10.4662   62.6808
+1vcj_ww.pdb    37.9746  -14.8208   55.4811
+1w1p_poc.pdb    42.9936   74.3737   52.2198
+1w1p_ww.pdb    31.9218   58.9369   77.0670
+1w2g_poc.pdb    33.8066   32.9480   60.1163
+1w2g_ww.pdb    36.7701   29.9153   73.2596
+1x8x_poc.pdb     9.6798   29.3992   16.2731
+1x8x_ww.pdb     5.5414   28.7519   23.3373
+1xm6_poc.pdb    45.8308    2.0493   -8.7589
+1xm6_ww.pdb    66.6708    2.0691    1.3299
+1xoq_poc.pdb    21.2856   21.5649   97.6325
+1xoq_ww.pdb    16.8031   24.1198   75.6674
+1xoz_poc.pdb    45.8544   36.1979   12.9024
+1xoz_ww.pdb    37.1997   39.8209   20.4717
+1y6b_poc.pdb     1.5846   30.7576   12.6420
+1y6b_ww.pdb     5.7961   38.8033   22.9242
+1ygc_poc.pdb    15.6987   39.6617   33.2996
+1ygc_ww.pdb    23.2352   33.6971   39.0319
+1yqy_poc.pdb    11.9677   18.1524   27.2639
+1yqy_ww.pdb     9.3747   25.4824   17.3024
+1yv3_poc.pdb    21.6458   38.0570   37.9398
+1yv3_ww.pdb    21.8082   36.9234   46.2026
+1yvf_poc.pdb   -11.1429   56.5003   51.5100
+1yvf_ww.pdb    -8.0120   53.6849   46.9303
+1ywr_poc.pdb     3.4756   -0.7962   19.0453
+1ywr_ww.pdb    -6.6135   -3.3947   15.5296
+1z95_poc.pdb    28.2557    1.8370    6.6259
+1z95_ww.pdb    22.1295    5.1316   10.9370
+2bm2_poc.pdb    44.2386  114.1335   81.3442
+2bm2_ww.pdb    33.6033   94.2993   88.9341
+2br1_poc.pdb    14.1679   -2.5882   11.6277
+2br1_ww.pdb    14.7892    1.9964   22.2774
+2bsm_poc.pdb    30.8006   10.9664   25.4210
+2bsm_ww.pdb    32.0373   14.3674   20.3525

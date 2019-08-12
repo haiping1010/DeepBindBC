@@ -1,0 +1,2 @@
+1hq2_processed.pdb
+1hq2_proc

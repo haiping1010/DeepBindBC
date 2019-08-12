@@ -1,0 +1,2 @@
+1gm8_processed.pdb
+1gm8_proc

@@ -1,0 +1,2 @@
+1lpz_processed.pdb
+1lpz_proc

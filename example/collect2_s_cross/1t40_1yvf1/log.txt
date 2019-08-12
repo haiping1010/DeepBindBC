@@ -1,0 +1,2 @@
+1t40_processed.pdb
+1t40_proc

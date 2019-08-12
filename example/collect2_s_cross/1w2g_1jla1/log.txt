@@ -1,0 +1,2 @@
+1w2g_processed.pdb
+1w2g_proc

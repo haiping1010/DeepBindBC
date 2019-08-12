@@ -1,0 +1,2 @@
+1sqn_processed.pdb
+1sqn_proc
