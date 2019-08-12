@@ -13,3 +13,4 @@ Deep learning-based protein-ligand binary classifier
 4. in the example/ folder, a example was provided, and with a readme.txt file for detailed illustration.
 
 
+Online version is on http://cbblab.siat.ac.cn/DeepBindBC/index.php
